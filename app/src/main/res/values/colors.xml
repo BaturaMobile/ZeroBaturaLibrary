@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F4B709</color>
+    <color name="colorPrimaryDark">#dba508</color>
+    <color name="colorPrimaryLight">#fdf7e6</color>
+
+    <color name="base_1">#292929</color>
+    <color name="base_2">#757575</color>
+    <color name="base_3">#BDBDBD</color>
+    <color name="base_4">#F1F1F1</color>
+    <color name="basewhite">#FFFFFF</color>
+
+    <color name="colorAccent">#f4b709</color>
+
+
+    <color name="success">#689f38</color>
+    <color name="alert">#f4b709</color>
+    <color name="error">#e64a19</color>
+
+</resources>
