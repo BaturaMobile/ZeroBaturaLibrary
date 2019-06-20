@@ -1,19 +1,18 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.MaterialComponents.Light">
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorSecondary">@color/colorPrimary</item>
+        <item name="colorOnSecondary">@color/colorPrimaryDark</item>
         <item name="colorAccent">?attr/colorPrimary</item>
         <item name="iconTint">@android:color/white</item>
+        <item name="actionBarTheme">@style/ToolbarLight</item>
        <!-- <item name="colorButtonNormal">@color/colorAccent</item> -->
        <!-- <item name="colorOnPrimary">@android:color/white</item>-->
         <!--<item name="colorOnPrimaryDisabled">@android:color/white</item>-->
-
-
-
-
     </style>
 
     <style name="SecondaryTherme" parent="Theme.MaterialComponents.Light">
@@ -27,30 +26,50 @@
     <!--<item name="colorOnPrimaryDisabled">@android:color/white</item>-->
 
 </style>
-    
+    <!-- Buttons Styles -->
     <style name="materialButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/bold</item>
         <item name="android:textAllCaps">false</item>
         <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:textColor">@android:color/white</item>
+
+    </style>
+
+    <style name="materialSummitButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:textColor">@android:color/white</item>
 
     </style>
 
     <style name="outlineMaterialButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/bold</item>
         <item name="android:textAllCaps">false</item>
         <item name="strokeColor">@color/out_lined_stroke</item>
 
     </style>
 
     <style name="textMaterialButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/bold</item>
         <item name="android:textAllCaps">false</item>
     </style>
 
     <style name="errorTextMaterialButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/bold</item>
         <item name="android:textAllCaps">false</item>
         <item name="rippleColor">@color/error</item>
        <item name="android:textColor">@color/error_text_color</item>
     </style>
 
     <style name="alertTextMaterialButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/bold</item>
         <item name="android:textAllCaps">false</item>
         <item name="rippleColor">@color/alert</item>
         <item name="android:textColor">@color/alert_text_color</item>
@@ -58,6 +77,8 @@
     </style>
 
     <style name="successTextMaterialButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/bold</item>
         <item name="android:textAllCaps">false</item>
         <item name="rippleColor">@color/success</item>
         <item name="android:textColor">@color/sucess_text_color</item>
@@ -71,7 +92,7 @@
         <item name="android:letterSpacing">0.09</item>
         <item name="android:lineSpacingExtra">1sp</item>
         <item name="android:textColor">@color/text_color</item>
-        <item name="android:fontFamily">@font/medium</item>
+        <item name="android:fontFamily">@font/bold</item>
         <item name="android:textAllCaps">false</item>
         <item name="android:textColorPrimaryDisableOnly">@color/colorPrimary</item>
     </style>
@@ -79,7 +100,7 @@
     <style name="Head1Bold" parent="android:TextAppearance.Material">
         <item name="android:fontFamily">@font/bold</item>
         <item name="android:textSize">34sp</item>
-        <item name="android:lineSpacingExtra">6sp</item>
+
         <item name="android:textColor">@color/base_1</item>
     </style>
 
@@ -125,7 +146,7 @@
         <item name="android:fontFamily">@font/book</item>
     </style>
 
-    <style name="Body1Bold" mparent="Body1">
+    <style name="Body1Bold" parent="Body1">
         <item name="android:fontFamily">@font/bold</item>
     </style>
 
@@ -178,5 +199,108 @@
         <item name="android:fontFamily">@font/bold</item>
     </style>
 
+    <!-- Toolbar -->
 
-  </resources>
+    <style name="ToolbarTitle" parent="Head4Bold">
+        <item name="android:textColor">@color/base_1</item>
+    </style>
+
+    <style name="ToolbarSubtitle" parent="Body2">
+        <item name="android:textColor">@color/base_2</item>
+    </style>
+
+    <style name="itemTextAppearance">
+        <item name="android:fontFamily">@font/bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="ToolbarLight" parent="Theme.MaterialComponents.Light">
+        <item name="android:background">@color/basewhite</item>
+        <item name="colorPrimary">@color/basewhite</item>
+        <item name="actionMenuTextColor">@color/colorPrimary</item>
+        <item name="android:actionMenuTextAppearance">@style/itemTextAppearance</item>
+        <item name="iconTint">@color/base_1</item>
+    </style>
+
+
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">16sp</item><!-- text size in menu-->
+        <item name="android:listPreferredItemHeightSmall">56dp</item><!-- item size in menu-->
+        <item name="listPreferredItemHeightSmall">56dp</item><!-- item size in menu-->
+    </style>
+    <style name="Widget.MaterialComponents.Button.TextButton.Snackbar">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="BaturaForm" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <!--<item name="boxStrokeColor">@color/form_box_stroke_color</item>
+        <item name="boxBackgroundColor">@color/form_box_background_color</item> -->
+        <item name="errorTextAppearance">@style/Error_appearance</item>
+        <item name="helperTextTextAppearance">@style/Helper_text_appearance</item>
+        <item name="hintTextAppearance">@style/Hint_text_appearance</item>
+        <item name="helperTextTextColor">@color/helper_text_color</item>
+        <item name="errorTextColor">@color/error</item>
+    </style>
+
+
+    <style name="Error_appearance" parent="TextAppearance.Design.Error">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/medium</item>
+    </style>
+
+    <style name="Helper_text_appearance" parent="TextAppearance.Design.Error">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/medium</item>
+    </style>
+
+    <style name="Hint_text_appearance" parent="TextAppearance.Design.Error">
+        <item name="android:textSize">11sp</item>
+        <item name="android:fontFamily">@font/medium</item>
+    </style>
+
+
+    <style name="DialogsThemePrimary" parent="DialogsThemeCustomBackground">
+        <item name="dialog_background_color">@color/colorPrimary_70</item>
+    </style>
+
+    <style name="DialogsThemeSuccess" parent="DialogsThemeCustomBackground">
+        <item name="dialog_background_color">@color/success_70</item>
+        <item name="colorPrimaryDark">@color/success</item>
+    </style>
+
+    <style name="DialogsThemeError" parent="DialogsThemeCustomBackground">
+        <item name="dialog_background_color">@color/error_70</item>
+        <item name="colorPrimaryDark">@color/error</item>
+    </style>
+
+    <style name="DialogsThemeAlert" parent="DialogsThemeCustomBackground">
+        <item name="dialog_background_color">@color/alert_70</item>
+        <item name="colorPrimaryDark">@color/alert</item>
+    </style>
+
+    <style name="DialogsThemeCustomBackground" parent="DialogsThemeBase">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="DialogsThemeBase" parent="@style/Theme.MaterialComponents.Dialog">
+        <item name="dialog_background_color">@android:color/transparent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorSecondary">@color/colorPrimary</item>
+        <item name="colorOnSecondary">@color/colorPrimaryDark</item>
+        <item name="colorAccent">?attr/colorPrimary</item>
+        <item name="iconTint">@android:color/white</item>
+        <item name="android:windowAnimationStyle">@style/DialogsAnimation.Window</item>
+    </style>
+
+    <style name="DialogsAnimation.Window" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/anim_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_out</item>
+    </style>
+
+
+</resources>

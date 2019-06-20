@@ -17,4 +17,11 @@
     <color name="alert">#f4b709</color>
     <color name="error">#e64a19</color>
 
+    <color name="colorSnackbarButton">#ef7f3e</color>
+
+    <color name="colorPrimary_70">#B3F4B709</color>
+    <color name="alert_70">#B3F4B709</color>
+    <color name="error_70">#B3E64A19</color>
+    <color name="success_70">#B3689F38</color>
+
 </resources>

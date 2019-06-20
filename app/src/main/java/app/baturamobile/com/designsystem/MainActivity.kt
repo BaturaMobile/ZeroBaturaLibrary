@@ -17,5 +17,35 @@ class MainActivity : AppCompatActivity() {
         buttons.setOnClickListener {
             startActivity(Intent(this,Buttons::class.java))
         }
+
+        texts.setOnClickListener {
+            startActivity(Intent (this,LettersActivity::class.java))
+        }
+
+        topbar.setOnClickListener {
+            startActivity(Intent (this,Toolbar::class.java))
+        }
+        bottomBar.setOnClickListener {
+            startActivity(Intent (this,BottomBar::class.java))
+        }
+
+        bottomNavigation.setOnClickListener {
+            startActivity(Intent(this,BottomNavigationActivity::class.java))
+        }
+
+        toast.setOnClickListener {
+            startActivity(Intent(this,ToastActivity::class.java))
+        }
+        forms.setOnClickListener {
+            startActivity(Intent(this,FormsActivity::class.java))
+        }
+
+        lists.setOnClickListener {
+            startActivity(Intent(this,ListsActivity::class.java))
+        }
+
+        dialogs.setOnClickListener {
+            startActivity(Intent(this,Dialogs::class.java))
+        }
     }
 }
