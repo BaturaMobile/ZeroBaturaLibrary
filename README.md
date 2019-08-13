@@ -1,13 +1,200 @@
-# Welcome to StackEdit!
 
-Hi! I'm your first Markdown file in **StackEdit**. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by opening the **file explorer** on the left corner of the navigation bar.
+<color name="colorPrimary_70">#B3F4B709</color>  
+<color name="alert_70">#B3F4B709</color>  
+<color name="error_70">#B3E64A19</color>  
+<color name="success_70">#B3689F38</color>
+```
 
+# Botones
 
-# Files
-
-StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
-
-## Create files and folders
+![Colores](http://pappstor.com/real/buttons.gif)
+```xml
+<!-- Buttons Styles -->  
+<style name="materialButton" parent="Widget.MaterialComponents.Button">  
+ <item name="android:textSize">15sp</item>  
+ <item name="android:fontFamily">@font/bold</item>  
+ <item name="android:textAllCaps">false</item>  
+ <item name="colorAccent">@color/colorPrimary</item>  
+ <item name="android:textColor">@android:color/white</item>  
+  
+</style>  
+  
+<style name="materialSummitButton" parent="Widget.MaterialComponents.Button">  
+ <item name="android:textSize">15sp</item>  
+ <item name="android:fontFamily">@font/bold</item>  
+ <item name="android:textAllCaps">false</item>  
+ <item name="colorAccent">@color/colorPrimary</item>  
+ <item name="android:textColor">@android:color/white</item>  
+  
+</style>  
+  
+<style name="outlineMaterialButton" parent="Widget.MaterialComponents.Button.OutlinedButton">  
+ <item name="android:textSize">15sp</item>  
+ <item name="android:fontFamily">@font/bold</item>  
+ <item name="android:textAllCaps">false</item>  
+ <item name="strokeColor">@color/out_lined_stroke</item>  
+  
+</style>  
+  
+<style name="textMaterialButton" parent="Widget.MaterialComponents.Button.TextButton">  
+ <item name="android:textSize">15sp</item>  
+ <item name="android:fontFamily">@font/bold</item>  
+ <item name="android:textAllCaps">false</item>  
+</style>  
+  
+<style name="errorTextMaterialButton" parent="Widget.MaterialComponents.Button.TextButton">  
+ <item name="android:textSize">15sp</item>  
+ <item name="android:fontFamily">@font/bold</item>  
+ <item name="android:textAllCaps">false</item>  
+ <item name="rippleColor">@color/error</item>  
+ <item name="android:textColor">@color/error_text_color</item>  
+</style>  
+  
+<style name="alertTextMaterialButton" parent="Widget.MaterialComponents.Button.TextButton">  
+ <item name="android:textSize">15sp</item>  
+ <item name="android:fontFamily">@font/bold</item>  
+ <item name="android:textAllCaps">false</item>  
+ <item name="rippleColor">@color/alert</item>  
+ <item name="android:textColor">@color/alert_text_color</item>  
+  
+</style>  
+  
+<style name="successTextMaterialButton" parent="Widget.MaterialComponents.Button.TextButton">  
+ <item name="android:textSize">15sp</item>  
+ <item name="android:fontFamily">@font/bold</item>  
+ <item name="android:textAllCaps">false</item>  
+ <item name="rippleColor">@color/success</item>  
+ <item name="android:textColor">@color/sucess_text_color</item>  
+</style>
+```
+# Textos
+![Colores](http://pappstor.com/real/text.gif)
+```xml
+<style name="Button" parent="TextAppearance.MaterialComponents.Button">  
+ <item name="android:textSize">15sp</item>  
+ <item name="android:letterSpacing">0.09</item>  
+ <item name="android:lineSpacingExtra">1sp</item>  
+ <item name="android:textColor">@color/text_color</item>  
+ <item name="android:fontFamily">@font/bold</item>  
+ <item name="android:textAllCaps">false</item>  
+ <item name="android:textColorPrimaryDisableOnly">@color/colorPrimary</item>  
+</style>  
+  
+<style name="Head1Bold" parent="android:TextAppearance.Material">  
+ <item name="android:fontFamily">@font/bold</item>  
+ <item name="android:textSize">34sp</item>  
+  
+ <item name="android:textColor">@color/base_1</item>  
+</style>  
+  
+<style name="Head2Bold" parent="android:TextAppearance.Material">  
+ <item name="android:fontFamily">@font/bold</item>  
+ <item name="android:textSize">28sp</item>  
+ <item name="android:lineSpacingExtra">6sp</item>  
+ <item name="android:textColor">@color/base_1</item>  
+</style>  
+   
+<style name="Head3Bold" parent="android:TextAppearance.Material">  
+ <item name="android:fontFamily">@font/bold</item>  
+ <item name="android:textSize">22sp</item>  
+ <item name="android:lineSpacingExtra">6sp</item>  
+ <item name="android:textColor">@color/base_1</item>  
+</style>  
+  
+<style name="Head4" parent="android:TextAppearance.Material">  
+ <item name="android:textSize">20sp</item>  
+ <item name="android:letterSpacing">0.02</item>  
+ <item name="android:lineSpacingExtra">4sp</item>  
+ <item name="android:textColor">@color/base_1</item>  
+</style>  
+  
+<style name="Head4Regular" parent="Head4">  
+ <item name="android:fontFamily">@font/medium</item>  
+</style>  
+    
+<style name="Head4Bold" parent="Head4">  
+ <item name="android:fontFamily">@font/bold</item>  
+</style>  
+  
+<style name="Body1" parent="android:TextAppearance.Material">  
+ <item name="android:textSize">17sp</item>  
+ <item name="android:lineSpacingExtra">7sp</item>  
+ <item name="android:textColor">@color/base_1</item>  
+</style>  
+ 
+<style name="Body1Light" parent="Body1">  
+ <item name="android:fontFamily">@font/book</item>  
+</style>  
+  
+<style name="Body1Bold" parent="Body1">  
+ <item name="android:fontFamily">@font/bold</item>  
+</style>  
+  
+<style name="Body1Regular" parent="Body1">  
+ <item name="android:fontFamily">@font/medium</item>  
+</style>  
+  
+<style name="Body2" parent="android:TextAppearance.Material">  
+ <item name="android:textSize">15sp</item>  
+ <item name="android:lineSpacingExtra">5sp</item>  
+ <item name="android:textColor">@color/base_1</item>  
+</style>  
+  
+<style name="Body2Light" parent="Body2">  
+ <item name="android:fontFamily">@font/book</item>  
+</style>  
+  
+<style name="Body2Bold" parent="Body2">  
+ <item name="android:fontFamily">@font/bold</item>  
+</style>  
+  
+<style name="Body2Regular" parent="Body2">  
+ <item name="android:fontFamily">@font/medium</item>  
+</style>  
+  
+<style name="Caption1" parent="android:TextAppearance.Material">  
+ <item name="android:textSize">13sp</item>  
+ <item name="android:lineSpacingExtra">3sp</item>  
+ <item name="android:textColor">@color/base_1</item>  
+</style>  
+  
+<style name="Caption1Regular" parent="Caption1">  
+ <item name="android:fontFamily">@font/medium</item>  
+</style>  
+  
+<style name="Caption1Bold" parent="Caption1">  
+ <item name="android:fontFamily">@font/bold</item>  
+</style>  
+  
+<style name="Caption2" parent="android:TextAppearance.Material">  
+ <item name="android:textSize">11sp</item>  
+ <item name="android:textColor">@color/base_1</item>  
+</style>  
+  
+<style name="Caption2Regular" parent="Caption2">  
+ <item name="android:fontFamily">@font/medium</item>  
+</style>  
+  
+<style name="Caption2Bold" parent="Caption2">  
+ <item name="android:fontFamily">@font/bold</item>  
+</style>
+```
+# TopBar
+![Colores](http://pappstor.com/real/topbar.jpg)
+# BottomBar
+![Colores](http://pappstor.com/real/bottomBar.gif)
+# Bottom Navigation
+![Colores](http://pappstor.com/real/bottomNavigation.gif)
+# Toast - SnackBars
+![Colores](http://pappstor.com/real/toasts.gif)
+# Forms
+![Colores](http://pappstor.com/real/forms.gif)
+# List
+![Colores](http://pappstor.com/real/list1.png)
+![Colores](http://pappstor.com/real/list2.png)
+![Colores](http://pappstor.com/real/list3.png)
+![Colores](http://pappstor.com/real/list4.png)
+# Dialogs
 
 The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.
 
