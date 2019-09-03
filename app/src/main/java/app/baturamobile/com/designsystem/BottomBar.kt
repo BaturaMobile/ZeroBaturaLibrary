@@ -30,9 +30,6 @@ class BottomBar : AppCompatActivity() {
         setSupportActionBar(bottom_app_bar)
 
         val addVisibilityChanged: FloatingActionButton.OnVisibilityChangedListener = object : FloatingActionButton.OnVisibilityChangedListener() {
-            override fun onShown(fab: FloatingActionButton?) {
-                super.onShown(fab)
-            }
             override fun onHidden(fab: FloatingActionButton?) {
                 super.onHidden(fab)
                 bottom_app_bar.toggleFabAlignment()
@@ -82,7 +79,6 @@ class BottomBar : AppCompatActivity() {
         ).setAction("UNDO") {  }
         // Changing message text color
         snackbar.setActionTextColor(ContextCompat.getColor(this, R.color.colorSnackbarButton))
-
         val snackbarView = snackbar.view
         val params = snackbarView.layoutParams as CoordinatorLayout.LayoutParams
 

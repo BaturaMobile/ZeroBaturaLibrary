@@ -32,22 +32,7 @@
             app:layout_constraintTop_toBottomOf="@+id/two_lines_snackbar"
             app:layout_constraintStart_toStartOf="@+id/normal_snakbar"
             app:layout_constraintEnd_toEndOf="@+id/normal_snakbar" android:text="Buttton Snackbar"/>
-    <Button
-            android:text="Two lines Long button snackbar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/twolines_long_button_snackbar"
-            app:layout_constraintStart_toStartOf="@+id/twolines_button_snackbar"
-            app:layout_constraintEnd_toEndOf="@+id/twolines_button_snackbar"
-            app:layout_constraintTop_toBottomOf="@+id/twolines_button_snackbar"/>
-    <Button
-            android:text="Icon snackBar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/icon_snackbar"
-            app:layout_constraintTop_toBottomOf="@+id/twolines_long_button_snackbar"
-            app:layout_constraintEnd_toEndOf="@+id/twolines_long_button_snackbar"
-            app:layout_constraintStart_toStartOf="@+id/twolines_long_button_snackbar"/>
+
     <Button
             android:text="Two Lines Button SnackBar"
             android:layout_width="wrap_content"

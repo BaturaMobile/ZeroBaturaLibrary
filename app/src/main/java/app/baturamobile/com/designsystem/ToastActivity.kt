@@ -34,13 +34,6 @@ class ToastActivity : AppCompatActivity() {
                 }).show()
         }
 
-        twolines_long_button_snackbar.setOnClickListener {
-            Snackbar.make(toast_container,"Greyhound divisively hello coldly wonderfully marginally far upon excluding.",Snackbar.LENGTH_SHORT)
-                .setAction("Long Text Button", View.OnClickListener {
-
-                }).show()
-        }
-
 
     }
 }
