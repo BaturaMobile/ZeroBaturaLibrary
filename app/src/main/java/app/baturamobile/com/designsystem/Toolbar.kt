@@ -36,6 +36,10 @@ class Toolbar : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
+        //Implementar titulo subtitulo
+        supportActionBar?.title = "hola"
+        supportActionBar?.subtitle = "que haze"
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

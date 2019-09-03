@@ -31,14 +31,14 @@
         <androidx.appcompat.widget.AppCompatTextView
                 android:text="Hola"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/textView45"
+                android:layout_height="wrap_content" android:id="@+id/secondaryTitle"
                 android:textAppearance="@style/ToolbarTitle" android:layout_marginLeft="72dp"/>
         <androidx.appcompat.widget.AppCompatTextView
                 android:text="que haze"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="@style/ToolbarSubtitle"
-                android:id="@+id/textView66" android:layout_marginLeft="72dp" android:layout_marginBottom="5dp"/>
+                android:id="@+id/secondarySubtitle" android:layout_marginLeft="72dp" android:layout_marginBottom="5dp"/>
 
 
     </com.google.android.material.appbar.AppBarLayout>
