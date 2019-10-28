@@ -40,6 +40,10 @@ class Toolbar : AppCompatActivity() {
         supportActionBar?.title = "hola"
         supportActionBar?.subtitle = "que haze"
 
+        //Implementar segundo titulo subtitulo
+        secondaryTitle.text = "Segundo Titulo"
+        secondarySubtitle.text = "Segundo subtitulo"
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

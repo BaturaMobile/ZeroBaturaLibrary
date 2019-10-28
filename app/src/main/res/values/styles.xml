@@ -230,9 +230,9 @@
         <item name="android:listPreferredItemHeightSmall">56dp</item><!-- item size in menu-->
         <item name="listPreferredItemHeightSmall">56dp</item><!-- item size in menu-->
     </style>
-    <style name="Widget.MaterialComponents.Button.TextButton.Snackbar">
+   <!-- <style name="Widget.MaterialComponents.Button.TextButton.Snackbar">
         <item name="android:textColor">?attr/colorPrimary</item>
-    </style>
+    </style> -->
 
     <style name="BaturaForm" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <!--<item name="boxStrokeColor">@color/form_box_stroke_color</item>

@@ -10,11 +10,10 @@ class BottomNavigationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_bottom_navigation)
 
+        bottom_navigation.getOrCreateBadge(R.id.app_bar_mail)
 
-        bottom_navigation.showBadge(R.id.app_bar_mail)
+        bottom_navigation.getOrCreateBadge(R.id.app_bar_delete)?.number = 99
 
-        bottom_navigation.showBadge(R.id.app_bar_delete).number = 99
-
-        bottom_navigation.showBadge(R.id.app_bar_archieve).number = 1200
+        bottom_navigation.getOrCreateBadge(R.id.app_bar_archieve)?.number = 1200
     }
 }

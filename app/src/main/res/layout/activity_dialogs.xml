@@ -28,35 +28,55 @@
             android:id="@+id/ad_dialog_head_img" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ad_dialog_alert"/>
+
     <Button
+            android:id="@+id/ad_primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Color Primary"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+            android:id="@+id/ad_success"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/ad_primary" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
-    <Button
             android:text="Color Success"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ad_primary" />
+
+    <Button
+            android:id="@+id/ad_error"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/ad_success" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@+id/ad_primary"/>
-    <Button
             android:text="Color Error"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ad_success" />
+
+    <Button
+            android:id="@+id/ad_alert"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/ad_error" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@+id/ad_success"/>
-    <Button
             android:text="Color Alert"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/ad_alert" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@+id/ad_error"/>
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ad_error" />
+
     <Button
-            android:text="Default"
+            android:id="@+id/ad_default"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/ad_default" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@+id/ad_alert"/>
+            android:text="Default"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ad_alert" />
 </androidx.constraintlayout.widget.ConstraintLayout>
