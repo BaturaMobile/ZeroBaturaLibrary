@@ -4,10 +4,10 @@
     <color name="colorPrimaryDark">#dba508</color>
     <color name="colorPrimaryLight">#fdf7e6</color>
 
-    <color name="base_1">#292929</color>
-    <color name="base_2">#757575</color>
-    <color name="base_3">#BDBDBD</color>
-    <color name="base_4">#F1F1F1</color>
+    <color name="base_500">#292929</color>
+    <color name="base_400">#757575</color>
+    <color name="base_200">#BDBDBD</color>
+    <color name="base_100">#F1F1F1</color>
     <color name="basewhite">#FFFFFF</color>
 
     <color name="colorAccent">#f4b709</color>
