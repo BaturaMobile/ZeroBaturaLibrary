@@ -25,10 +25,10 @@ Los colores primarios son dependiente de cada proyecto pero en este caso vamos a
 <color name="colorPrimary">#F4B709</color>  
 <color name="colorPrimaryDark">#dba508</color>  
 <color name="colorPrimaryLight">#fdf7e6</color>  
-<color name="base_1">#292929</color>  
-<color name="base_2">#757575</color>  
-<color name="base_3">#BDBDBD</color>  
-<color name="base_4">#F1F1F1</color>  
+<color name="base_500">#292929</color>
+<color name="base_400">#757575</color>
+<color name="base_200">#BDBDBD</color>
+<color name="base_100">#F1F1F1</color>
 <color name="basewhite">#FFFFFF</color>  
 <color name="colorAccent">#f4b709</color>  
 <color name="success">#689f38</color>  
@@ -122,28 +122,28 @@ Los colores primarios son dependiente de cada proyecto pero en este caso vamos a
  <item name="android:fontFamily">@font/bold</item>  
  <item name="android:textSize">34sp</item>  
   
- <item name="android:textColor">@color/base_1</item>  
+ <item name="android:textColor">@color/base_500</item>
 </style>  
   
 <style name="Head2Bold" parent="android:TextAppearance.Material">  
  <item name="android:fontFamily">@font/bold</item>  
  <item name="android:textSize">28sp</item>  
  <item name="android:lineSpacingExtra">6sp</item>  
- <item name="android:textColor">@color/base_1</item>  
+ <item name="android:textColor">@color/base_500</item>
 </style>  
    
 <style name="Head3Bold" parent="android:TextAppearance.Material">  
  <item name="android:fontFamily">@font/bold</item>  
  <item name="android:textSize">22sp</item>  
  <item name="android:lineSpacingExtra">6sp</item>  
- <item name="android:textColor">@color/base_1</item>  
+ <item name="android:textColor">@color/base_500</item>
 </style>  
   
 <style name="Head4" parent="android:TextAppearance.Material">  
  <item name="android:textSize">20sp</item>  
  <item name="android:letterSpacing">0.02</item>  
  <item name="android:lineSpacingExtra">4sp</item>  
- <item name="android:textColor">@color/base_1</item>  
+ <item name="android:textColor">@color/base_500</item>
 </style>  
   
 <style name="Head4Regular" parent="Head4">  
@@ -157,7 +157,7 @@ Los colores primarios son dependiente de cada proyecto pero en este caso vamos a
 <style name="Body1" parent="android:TextAppearance.Material">  
  <item name="android:textSize">17sp</item>  
  <item name="android:lineSpacingExtra">7sp</item>  
- <item name="android:textColor">@color/base_1</item>  
+ <item name="android:textColor">@color/base_500</item>
 </style>  
  
 <style name="Body1Light" parent="Body1">  
@@ -175,7 +175,7 @@ Los colores primarios son dependiente de cada proyecto pero en este caso vamos a
 <style name="Body2" parent="android:TextAppearance.Material">  
  <item name="android:textSize">15sp</item>  
  <item name="android:lineSpacingExtra">5sp</item>  
- <item name="android:textColor">@color/base_1</item>  
+ <item name="android:textColor">@color/base_500</item>
 </style>  
   
 <style name="Body2Light" parent="Body2">  
@@ -184,7 +184,7 @@ Los colores primarios son dependiente de cada proyecto pero en este caso vamos a
   
 <style name="Body2Bold" parent="Body2">  
  <item name="android:fontFamily">@font/bold</item>  
-</style>  
+</style>
   
 <style name="Body2Regular" parent="Body2">  
  <item name="android:fontFamily">@font/medium</item>  
@@ -193,7 +193,7 @@ Los colores primarios son dependiente de cada proyecto pero en este caso vamos a
 <style name="Caption1" parent="android:TextAppearance.Material">  
  <item name="android:textSize">13sp</item>  
  <item name="android:lineSpacingExtra">3sp</item>  
- <item name="android:textColor">@color/base_1</item>  
+ <item name="android:textColor">@color/base_500</item>
 </style>  
   
 <style name="Caption1Regular" parent="Caption1">  
@@ -206,7 +206,7 @@ Los colores primarios son dependiente de cada proyecto pero en este caso vamos a
   
 <style name="Caption2" parent="android:TextAppearance.Material">  
  <item name="android:textSize">11sp</item>  
- <item name="android:textColor">@color/base_1</item>  
+ <item name="android:textColor">@color/base_500</item>
 </style>  
   
 <style name="Caption2Regular" parent="Caption2">  

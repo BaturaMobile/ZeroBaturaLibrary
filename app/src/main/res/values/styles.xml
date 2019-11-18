@@ -101,14 +101,14 @@
         <item name="android:fontFamily">@font/bold</item>
         <item name="android:textSize">34sp</item>
 
-        <item name="android:textColor">@color/base_1</item>
+        <item name="android:textColor">@color/base_500</item>
     </style>
 
     <style name="Head2Bold" parent="android:TextAppearance.Material">
         <item name="android:fontFamily">@font/bold</item>
         <item name="android:textSize">28sp</item>
         <item name="android:lineSpacingExtra">6sp</item>
-        <item name="android:textColor">@color/base_1</item>
+        <item name="android:textColor">@color/base_500</item>
     </style>
 
 
@@ -116,14 +116,14 @@
         <item name="android:fontFamily">@font/bold</item>
         <item name="android:textSize">22sp</item>
         <item name="android:lineSpacingExtra">6sp</item>
-        <item name="android:textColor">@color/base_1</item>
+        <item name="android:textColor">@color/base_500</item>
     </style>
 
     <style name="Head4" parent="android:TextAppearance.Material">
         <item name="android:textSize">20sp</item>
         <item name="android:letterSpacing">0.02</item>
         <item name="android:lineSpacingExtra">4sp</item>
-        <item name="android:textColor">@color/base_1</item>
+        <item name="android:textColor">@color/base_500</item>
     </style>
 
     <style name="Head4Regular" parent="Head4">
@@ -138,7 +138,7 @@
     <style name="Body1" parent="android:TextAppearance.Material">
         <item name="android:textSize">17sp</item>
         <item name="android:lineSpacingExtra">7sp</item>
-        <item name="android:textColor">@color/base_1</item>
+        <item name="android:textColor">@color/base_500</item>
     </style>
 
 
@@ -157,7 +157,7 @@
     <style name="Body2" parent="android:TextAppearance.Material">
         <item name="android:textSize">15sp</item>
         <item name="android:lineSpacingExtra">5sp</item>
-        <item name="android:textColor">@color/base_1</item>
+        <item name="android:textColor">@color/base_500</item>
     </style>
 
     <style name="Body2Light" parent="Body2">
@@ -175,7 +175,7 @@
     <style name="Caption1" parent="android:TextAppearance.Material">
         <item name="android:textSize">13sp</item>
         <item name="android:lineSpacingExtra">3sp</item>
-        <item name="android:textColor">@color/base_1</item>
+        <item name="android:textColor">@color/base_500</item>
     </style>
 
     <style name="Caption1Regular" parent="Caption1">
@@ -188,7 +188,7 @@
 
     <style name="Caption2" parent="android:TextAppearance.Material">
         <item name="android:textSize">11sp</item>
-        <item name="android:textColor">@color/base_1</item>
+        <item name="android:textColor">@color/base_500</item>
     </style>
 
     <style name="Caption2Regular" parent="Caption2">
@@ -202,11 +202,11 @@
     <!-- Toolbar -->
 
     <style name="ToolbarTitle" parent="Head4Bold">
-        <item name="android:textColor">@color/base_1</item>
+        <item name="android:textColor">@color/base_500</item>
     </style>
 
     <style name="ToolbarSubtitle" parent="Body2">
-        <item name="android:textColor">@color/base_2</item>
+        <item name="android:textColor">@color/base_400</item>
     </style>
 
     <style name="itemTextAppearance">
@@ -221,7 +221,7 @@
         <item name="colorPrimary">@color/basewhite</item>
         <item name="actionMenuTextColor">@color/colorPrimary</item>
         <item name="android:actionMenuTextAppearance">@style/itemTextAppearance</item>
-        <item name="iconTint">@color/base_1</item>
+        <item name="iconTint">@color/base_500</item>
     </style>
 
 
