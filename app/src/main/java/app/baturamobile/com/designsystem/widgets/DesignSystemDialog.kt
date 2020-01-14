@@ -1,6 +1,5 @@
 package app.baturamobile.com.designsystem.widgets
 
-import android.app.Activity
 import android.app.Dialog
 import android.content.Context
 import android.os.Bundle
@@ -9,6 +8,7 @@ import androidx.annotation.DrawableRes
 import androidx.annotation.LayoutRes
 import androidx.annotation.StyleRes
 import androidx.fragment.app.DialogFragment
+import kotlinx.android.synthetic.main.standard_container_dialog.*
 import kotlinx.android.synthetic.main.standard_dialog.*
 import java.io.Serializable
 
@@ -18,11 +18,20 @@ class DesignSystemDialog(@LayoutRes val layoutDialog : Int, @StyleRes val dialog
 
     private var fragmentName  = ""
 
+    private var dismissOnClickButton = false
+
     fun setDesignComponents(designSystemComponents: DesignSystemComponents) {
         val bundle = Bundle()
         bundle.putSerializable(DESIGN_SYSTEM_COMPONENTS_KEY,designSystemComponents)
         arguments = bundle
 
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        if(dismissOnClickButton.not()){
+              listener?.onDismiss(fragmentName)
+        }
     }
 
 
@@ -41,18 +50,32 @@ class DesignSystemDialog(@LayoutRes val layoutDialog : Int, @StyleRes val dialog
         }
 
         sd_left_button.setOnClickListener {
+
+            dismissOnClickButton = true
+
             dismiss()
             listener?.onLeftButtonClick(fragmentName) }
 
         sd_right_button.setOnClickListener {
+
+            dismissOnClickButton = true
+
             dismiss()
             listener?.onRightButtonClick(fragmentName) }
 
-        scd_container.setOnClickListener {
+
+        if (dismissEnabled.not()){
+            dialog?.setCanceledOnTouchOutside(false)
+        }
+        scd_main_container.setOnClickListener {
             if (dismissEnabled){
                 dismiss()
             }
         }
+
+
+
+
         dialog?.setOnKeyListener { dialog, keyCode, event ->
             if (keyCode == KeyEvent.KEYCODE_BACK && dismissEnabled) {
                 dialog.dismiss()
@@ -119,6 +142,7 @@ class DesignSystemDialog(@LayoutRes val layoutDialog : Int, @StyleRes val dialog
     interface DesignSystemDialogListener {
         fun onLeftButtonClick(dialogName : String)
         fun onRightButtonClick(dialogName : String)
+        fun onDismiss(dialogName : String)
     }
 
     companion object {
