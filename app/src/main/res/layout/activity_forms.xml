@@ -7,7 +7,7 @@
         android:layout_height="match_parent"
         tools:context=".FormsActivity">
 
-    <app.baturamobile.com.designsystem.widgets.BaturaTextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
@@ -24,9 +24,9 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"/>
                 android:hint="hint"/>
-    </app.baturamobile.com.designsystem.widgets.BaturaTextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <app.baturamobile.com.designsystem.widgets.BaturaTextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
@@ -42,9 +42,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="hint"/>
-    </app.baturamobile.com.designsystem.widgets.BaturaTextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <app.baturamobile.com.designsystem.widgets.BaturaTextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
@@ -58,6 +58,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="hint"/>
-    </app.baturamobile.com.designsystem.widgets.BaturaTextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

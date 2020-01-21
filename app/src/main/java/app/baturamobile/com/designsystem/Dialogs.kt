@@ -14,7 +14,14 @@ import kotlinx.android.synthetic.main.activity_dialogs.*
 import kotlinx.android.synthetic.main.standard_dialog.*
 import java.io.Serializable
 
-class Dialogs : AppCompatActivity() {
+class Dialogs : AppCompatActivity(), DesignSystemDialog.DesignSystemDialogListener {
+    override fun onRightButtonClick(dialogName: String) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onLeftButtonClick(dialogName: String) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,6 +34,7 @@ class Dialogs : AppCompatActivity() {
                 description = "Alert dialog prompt, no more than two lines.",
                 leftButtonText = "Button",
                 rightButtonText = "Button")
+            //TODO make dialogs compatible with one button and name dialog
 
             fragment.setDesignComponents(test)
 
