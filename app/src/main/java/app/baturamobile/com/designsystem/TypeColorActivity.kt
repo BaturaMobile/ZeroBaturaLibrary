@@ -7,6 +7,6 @@ class TypeColorActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_type_calor)
+        setContentView(R.layout.activity_type_color)
     }
 }
