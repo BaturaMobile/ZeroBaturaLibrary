@@ -3,9 +3,14 @@ package app.baturamobile.com.designsystem
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
+import com.baturamobile.utils.collapsePanels
+import com.baturamobile.utils.expandNotificationPanel
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+
+    val handler = Handler()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,7 +50,14 @@ class MainActivity : AppCompatActivity() {
         }
 
         dialogs.setOnClickListener {
-            startActivity(Intent(this,Dialogs::class.java))
+            expandNotificationPanel()
+            handler.postDelayed({
+                collapsePanels()
+            },1000)
+            //startActivity(Intent(this,Dialogs::class.java))
         }
+
+
+
     }
 }
