@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -101,14 +101,14 @@
         <item name="android:fontFamily">@font/bold</item>
         <item name="android:textSize">34sp</item>
 
-        <item name="android:textColor">@color/base_500</item>
+        <!--<item name="android:textColor">@color/base_500</item>-->
     </style>
 
     <style name="Head2Bold" parent="TextAppearance.AppCompat">
         <item name="android:fontFamily">@font/bold</item>
         <item name="android:textSize">28sp</item>
         <item name="android:lineSpacingExtra">6sp</item>
-        <item name="android:textColor">@color/base_500</item>
+       <!-- <item name="android:textColor">@color/base_500</item>-->
     </style>
 
 
@@ -116,14 +116,14 @@
         <item name="android:fontFamily">@font/bold</item>
         <item name="android:textSize">22sp</item>
         <item name="android:lineSpacingExtra">6sp</item>
-        <item name="android:textColor">@color/base_500</item>
+     <!--   <item name="android:textColor">@color/base_500</item> -->
     </style>
 
     <style name="Head4" parent="TextAppearance.AppCompat">
         <item name="android:textSize">20sp</item>
         <item name="android:letterSpacing">0.02</item>
         <item name="android:lineSpacingExtra">4sp</item>
-        <item name="android:textColor">@color/base_500</item>
+     <!--   <item name="android:textColor">@color/base_500</item> -->
     </style>
 
     <style name="Head4Regular" parent="Head4">
@@ -138,7 +138,7 @@
     <style name="Body1" parent="TextAppearance.AppCompat">
         <item name="android:textSize">17sp</item>
         <item name="android:lineSpacingExtra">7sp</item>
-        <item name="android:textColor">@color/base_500</item>
+     <!--   <item name="android:textColor">@color/base_500</item> -->
     </style>
 
 
@@ -157,7 +157,7 @@
     <style name="Body2" parent="TextAppearance.AppCompat">
         <item name="android:textSize">15sp</item>
         <item name="android:lineSpacingExtra">5sp</item>
-        <item name="android:textColor">@color/base_500</item>
+     <!--   <item name="android:textColor">@color/base_500</item> -->
     </style>
 
     <style name="Body2Light" parent="Body2">
@@ -174,8 +174,8 @@
 
     <style name="Caption1" parent="TextAppearance.AppCompat">
         <item name="android:textSize">13sp</item>
-        <item name="android:lineSpacingExtra">3sp</item>
-        <item name="android:textColor">@color/base_500</item>
+        <!--<item name="android:lineSpacingExtra">3sp</item> -->
+       <!-- <item name="android:textColor">@color/base_500</item> -->
     </style>
 
     <style name="Caption1Regular" parent="Caption1">
@@ -188,7 +188,7 @@
 
     <style name="Caption2" parent="TextAppearance.AppCompat">
         <item name="android:textSize">11sp</item>
-        <item name="android:textColor">@color/base_500</item>
+       <!-- <item name="android:textColor">@color/base_500</item> -->
     </style>
 
     <style name="Caption2Regular" parent="Caption2">
@@ -286,7 +286,7 @@
         <item name="android:windowBackground">@android:color/transparent</item>
     </style>
 
-    <style name="DialogsThemeBase" parent="@style/Theme.MaterialComponents.Dialog">
+    <style name="DialogsThemeBase" parent="@style/Theme.MaterialComponents.DayNight.Dialog">
         <item name="dialog_background_color">@android:color/transparent</item>
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -301,6 +301,34 @@
         <item name="android:windowEnterAnimation">@anim/anim_in</item>
         <item name="android:windowExitAnimation">@anim/anim_out</item>
     </style>
+
+    <style name="Chip.Entry" parent="Widget.MaterialComponents.Chip.Entry">
+        <item name="android:textAppearance">@style/Caption1Regular</item>
+    </style>
+    <style name="Chip.Filter" parent="Widget.MaterialComponents.Chip.Filter">
+        <item name="android:textAppearance">@style/Caption1Regular</item>
+    </style>
+    <style name="Chip.Choice" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="android:textAppearance">@style/Caption1Regular</item>
+    </style>
+    <style name="Chip.Action" parent="Widget.MaterialComponents.Chip.Action">
+        <item name="android:textAppearance">@style/Caption1Regular</item>
+    </style>
+
+    <style name="CheckBox" parent="@style/Widget.MaterialComponents.CompoundButton.CheckBox">
+        <item name="android:textAppearance">@style/Caption1Regular</item>
+    </style>
+
+    <style name="Switch" parent="@style/Widget.MaterialComponents.CompoundButton.Switch">
+        <item name="android:textAppearance">@style/Caption1Regular</item>
+    </style>
+
+    <style name="RadioButton" parent="@style/Widget.MaterialComponents.CompoundButton.RadioButton">
+        <item name="android:textAppearance">@style/Caption1Regular</item>
+    </style>
+
+
+
 
 
 </resources>

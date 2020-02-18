@@ -50,14 +50,26 @@ class MainActivity : AppCompatActivity() {
         }
 
         dialogs.setOnClickListener {
-            expandNotificationPanel()
-            handler.postDelayed({
-                collapsePanels()
-            },1000)
-            //startActivity(Intent(this,Dialogs::class.java))
+            startActivity(Intent(this,Dialogs::class.java))
+        }
+        bannerButton.setOnClickListener {
+            banner.show()
+        }
+        chips.setOnClickListener {
+            startActivity(Intent(this,ChipsActivity::class.java))
+        }
+
+        selections.setOnClickListener {
+            startActivity(Intent(this,Selections::class.java))
         }
 
 
+
+
+
+        banner.setRightButtonAction {
+            banner.dismiss()
+        }
 
     }
 }

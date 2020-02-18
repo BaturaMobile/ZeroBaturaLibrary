@@ -3,48 +3,37 @@
         xmlns:tools="http://schemas.android.com/tools"
         package="app.baturamobile.com.designsystem">
 
-
     <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
 
     <application
-            tools:ignore="GoogleAppIndexingWarning"
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
-            android:theme="@style/AppTheme">
-        <activity android:name=".Dialogs">
-        </activity>
-        <activity android:name=".ListsActivity">
-        </activity>
-        <activity android:name=".FormsActivity">
-        </activity>
-        <activity android:name=".ToastActivity">
-        </activity>
-        <activity android:name=".BottomNavigationActivity">
-        </activity>
-        <activity android:name=".BottomBar">
-        </activity>
-        <activity android:name=".Toolbar">
-        </activity>
+            android:theme="@style/AppTheme"
+            tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Selections"></activity>
+        <activity android:name=".ChipsActivity" />
+        <activity android:name=".Dialogs" />
+        <activity android:name=".ListsActivity" />
+        <activity android:name=".FormsActivity" />
+        <activity android:name=".ToastActivity" />
+        <activity android:name=".BottomNavigationActivity" />
+        <activity android:name=".BottomBar" />
+        <activity android:name=".Toolbar" />
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
                 android:name=".LettersActivity"
-                android:label="@string/title_activity_letters">
-        </activity>
-        <activity android:name=".TypeColorActivity">
-        </activity>
-        <activity android:name=".Buttons">
-        </activity>
-
-
+                android:label="@string/title_activity_letters" />
+        <activity android:name=".TypeColorActivity" />
+        <activity android:name=".Buttons" />
     </application>
 
 </manifest>

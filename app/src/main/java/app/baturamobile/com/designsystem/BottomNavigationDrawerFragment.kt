@@ -18,7 +18,7 @@ class BottomNavigationDrawerFragment: BottomSheetDialogFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         navigation_view.setNavigationItemSelectedListener { menuItem ->
             // Bottom Navigation Drawer menu item clicks
-            when (menuItem!!.itemId) {
+            when (menuItem.itemId) {
                 R.id.nav1 -> context!!.toast(getString(R.string.nav1_clicked))
                 R.id.nav2 -> context!!.toast(getString(R.string.nav2_clicked))
                 R.id.nav3 -> context!!.toast(getString(R.string.nav3_clicked))

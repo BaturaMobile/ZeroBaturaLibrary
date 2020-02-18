@@ -15,10 +15,9 @@
                                                      android:theme="@style/ToolbarLight"
                                                      android:id="@+id/appBarLayout2">
 
-        <androidx.appcompat.widget.Toolbar
+        <com.google.android.material.appbar.MaterialToolbar
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:theme="?attr/actionBarTheme"
                 app:titleTextAppearance="@style/ToolbarTitle"
                 app:subtitleTextAppearance="@style/ToolbarSubtitle"
                 android:minHeight="?attr/actionBarSize"
@@ -27,7 +26,7 @@
                 app:layout_constraintEnd_toEndOf="parent" app:title="Hola" app:subtitle='que haze'
                 android:visibility="visible" android:background="@color/basewhite">
 
-        </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.MaterialToolbar>
         <androidx.appcompat.widget.AppCompatTextView
                 android:text="Hola"
                 android:layout_width="wrap_content"

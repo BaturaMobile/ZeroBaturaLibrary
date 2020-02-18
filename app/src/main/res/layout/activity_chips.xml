@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ChipsActivity">
+
+    <com.google.android.material.chip.ChipGroup
+            android:id="@+id/filter_chip_group"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.chip.Chip
+                android:id="@+id/filter_chip"
+                style="@style/Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Filtro1" />
+
+        <com.google.android.material.chip.Chip
+                android:id="@+id/filter_chip2"
+                style="@style/Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Filtro2" />
+
+        <com.google.android.material.chip.Chip
+                android:id="@+id/filter_chip3"
+                style="@style/Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Filtro3" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <com.google.android.material.chip.ChipGroup
+            android:id="@+id/choice_chip_group"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/filter_chip_group">
+
+        <com.google.android.material.chip.Chip
+                android:id="@+id/choice_chip"
+                style="@style/Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Filtro1" />
+
+        <com.google.android.material.chip.Chip
+                android:id="@+id/choice_chip2"
+                style="@style/Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Filtro2" />
+
+        <com.google.android.material.chip.Chip
+                android:id="@+id/choice_chip3"
+                style="@style/Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Filtro3" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <com.google.android.material.chip.Chip
+            android:id="@+id/entry_chip"
+            style="@style/Chip.Entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entry Chip"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/choice_chip_group" />
+
+    <com.google.android.material.chip.Chip
+            android:id="@+id/action_chip"
+            style="@style/Chip.Action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Action Chip"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:chipIcon="@drawable/avatar_40"
+            app:layout_constraintTop_toBottomOf="@+id/entry_chip" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
