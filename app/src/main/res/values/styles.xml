@@ -1,31 +1,7 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorSecondary">@color/colorPrimary</item>
-        <item name="colorOnSecondary">@color/colorPrimaryDark</item>
-        <item name="colorAccent">?attr/colorPrimary</item>
-        <item name="iconTint">@android:color/white</item>
-        <item name="actionBarTheme">@style/ToolbarLight</item>
-       <!-- <item name="colorButtonNormal">@color/colorAccent</item> -->
-       <!-- <item name="colorOnPrimary">@android:color/white</item>-->
-        <!--<item name="colorOnPrimaryDisabled">@android:color/white</item>-->
-    </style>
 
-    <style name="SecondaryTherme" parent="Theme.MaterialComponents.Light">
-    <!-- Customize your theme here. -->
-    <item name="colorPrimary">#4444FF</item>
-    <item name="colorPrimaryDark">#4444FF</item>
-    <item name="colorAccent">?attr/colorPrimary</item>
-    <item name="iconTint">@android:color/white</item>
-    <!-- <item name="colorButtonNormal">@color/colorAccent</item> -->
-    <!-- <item name="colorOnPrimary">@android:color/white</item>-->
-    <!--<item name="colorOnPrimaryDisabled">@android:color/white</item>-->
 
-</style>
     <!-- Buttons Styles -->
     <style name="materialButton" parent="Widget.MaterialComponents.Button">
         <item name="android:textSize">15sp</item>
@@ -202,11 +178,11 @@
     <!-- Toolbar -->
 
     <style name="ToolbarTitle" parent="Head4Bold">
-        <item name="android:textColor">@color/base_500</item>
+        <!--<item name="android:textColor">@color/base_500</item> -->
     </style>
 
     <style name="ToolbarSubtitle" parent="Body2">
-        <item name="android:textColor">@color/base_400</item>
+       <!-- <item name="android:textColor">@color/base_400</item> -->
     </style>
 
     <style name="itemTextAppearance">
@@ -240,7 +216,7 @@
         <item name="errorTextAppearance">@style/Error_appearance</item>
         <item name="helperTextTextAppearance">@style/Helper_text_appearance</item>
         <item name="hintTextAppearance">@style/Hint_text_appearance</item>
-        <item name="helperTextTextColor">@color/helper_text_color</item>
+        <item name="helperTextTextColor">?android:attr/textColorPrimary</item>
         <item name="errorTextColor">@color/error</item>
     </style>
 
@@ -255,47 +231,13 @@
         <item name="android:fontFamily">@font/medium</item>
     </style>
 
-    <style name="Hint_text_appearance" parent="TextAppearance.Design.Error">
+    <style name="Hint_text_appearance" parent="TextAppearance.AppCompat.Caption">
         <item name="android:textSize">11sp</item>
         <item name="android:fontFamily">@font/medium</item>
     </style>
 
 
-    <style name="DialogsThemePrimary" parent="DialogsThemeCustomBackground">
-        <item name="dialog_background_color">@color/colorPrimary_70</item>
-    </style>
 
-    <style name="DialogsThemeSuccess" parent="DialogsThemeCustomBackground">
-        <item name="dialog_background_color">@color/success_70</item>
-        <item name="colorPrimaryDark">@color/success</item>
-    </style>
-
-    <style name="DialogsThemeError" parent="DialogsThemeCustomBackground">
-        <item name="dialog_background_color">@color/error_70</item>
-        <item name="colorPrimaryDark">@color/error</item>
-    </style>
-
-    <style name="DialogsThemeAlert" parent="DialogsThemeCustomBackground">
-        <item name="dialog_background_color">@color/alert_70</item>
-        <item name="colorPrimaryDark">@color/alert</item>
-    </style>
-
-    <style name="DialogsThemeCustomBackground" parent="DialogsThemeBase">
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowIsFloating">false</item>
-        <item name="android:windowBackground">@android:color/transparent</item>
-    </style>
-
-    <style name="DialogsThemeBase" parent="@style/Theme.MaterialComponents.DayNight.Dialog">
-        <item name="dialog_background_color">@android:color/transparent</item>
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorSecondary">@color/colorPrimary</item>
-        <item name="colorOnSecondary">@color/colorPrimaryDark</item>
-        <item name="colorAccent">?attr/colorPrimary</item>
-        <item name="iconTint">@android:color/white</item>
-        <item name="android:windowAnimationStyle">@style/DialogsAnimation.Window</item>
-    </style>
 
     <style name="DialogsAnimation.Window" parent="@android:style/Animation.Activity">
         <item name="android:windowEnterAnimation">@anim/anim_in</item>

@@ -1,0 +1,14 @@
+<resources>
+
+
+    <style name="BaturaForm" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <!--<item name="boxStrokeColor">@color/form_box_stroke_color</item>
+        <item name="boxBackgroundColor">@color/form_box_background_color</item> -->
+        <item name="errorTextAppearance">@style/Error_appearance</item>
+        <item name="helperTextTextAppearance">@style/Helper_text_appearance</item>
+        <item name="hintTextAppearance">@style/Hint_text_appearance</item>
+        <item name="helperTextTextColor">@color/base_200</item>
+        <item name="errorTextColor">@color/error</item>
+    </style>
+
+</resources>

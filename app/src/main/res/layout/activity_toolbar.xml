@@ -12,7 +12,6 @@
                                                      app:layout_constraintStart_toStartOf="parent"
                                                      app:layout_constraintEnd_toEndOf="parent"
                                                      app:layout_constraintTop_toTopOf="parent"
-                                                     android:theme="@style/ToolbarLight"
                                                      android:id="@+id/appBarLayout2">
 
         <com.google.android.material.appbar.MaterialToolbar
@@ -24,7 +23,7 @@
                 android:id="@+id/toolbar" app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" app:title="Hola" app:subtitle='que haze'
-                android:visibility="visible" android:background="@color/basewhite">
+                android:visibility="visible" >
 
         </com.google.android.material.appbar.MaterialToolbar>
         <androidx.appcompat.widget.AppCompatTextView

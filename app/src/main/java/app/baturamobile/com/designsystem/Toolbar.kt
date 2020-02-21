@@ -30,7 +30,7 @@ class Toolbar : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_toolbar)
 
-        //setSupportActionBar(toolbar)
+        setSupportActionBar(toolbar)
 
         //Botón atras activado
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
@@ -41,8 +41,8 @@ class Toolbar : AppCompatActivity() {
         supportActionBar?.subtitle = "que haze"
 
         //Implementar segundo titulo subtitulo
-       // secondaryTitle.text = "Segundo Titulo"
-       // secondarySubtitle.text = "Segundo subtitulo"
+        secondaryTitle.text = "Segundo Titulo"
+        secondarySubtitle.text = "Segundo subtitulo"
 
     }
 
