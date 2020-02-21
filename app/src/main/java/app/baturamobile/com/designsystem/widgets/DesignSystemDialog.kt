@@ -15,6 +15,9 @@ import java.io.Serializable
 class DesignSystemDialog(@LayoutRes val layoutDialog : Int, @StyleRes val dialogTheme : Int, val dismissEnabled : Boolean = true) : DialogFragment() {
 
     private var listener : DesignSystemDialogListener? = null
+    fun setListener(listener: DesignSystemDialogListener){
+        this.listener = listener
+    }
 
     private var fragmentName  = ""
 
@@ -30,11 +33,9 @@ class DesignSystemDialog(@LayoutRes val layoutDialog : Int, @StyleRes val dialog
     override fun onDestroyView() {
         super.onDestroyView()
         if(dismissOnClickButton.not()){
-              listener?.onDismiss(fragmentName)
+            listener?.onDismiss(fragmentName)
         }
     }
-
-
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(layoutDialog,container,false)
@@ -73,10 +74,7 @@ class DesignSystemDialog(@LayoutRes val layoutDialog : Int, @StyleRes val dialog
             }
         }
 
-
-
-
-        dialog?.setOnKeyListener { dialog, keyCode, event ->
+        dialog?.setOnKeyListener { dialog, keyCode, _ ->
             if (keyCode == KeyEvent.KEYCODE_BACK && dismissEnabled) {
                 dialog.dismiss()
             }
@@ -92,8 +90,7 @@ class DesignSystemDialog(@LayoutRes val layoutDialog : Int, @StyleRes val dialog
         return dialog
     }
 
-
-
+    @Suppress("CAST_NEVER_SUCCEEDS")
     override fun onAttach(context: Context) {
         super.onAttach(context)
 
@@ -131,7 +128,6 @@ class DesignSystemDialog(@LayoutRes val layoutDialog : Int, @StyleRes val dialog
 
     }
 
-
     class DesignSystemComponents(val title: String? = null,
                                  val description : String? = null,
                                  val leftButtonText : String? = null,
@@ -139,15 +135,14 @@ class DesignSystemDialog(@LayoutRes val layoutDialog : Int, @StyleRes val dialog
                                  @DrawableRes val imageDrawable : Int? = null,
                                  val dialogName : String = ""): Serializable
 
-    interface DesignSystemDialogListener {
-        fun onLeftButtonClick(dialogName : String)
-        fun onRightButtonClick(dialogName : String)
-        fun onDismiss(dialogName : String)
+    open class DesignSystemDialogListener {
+        open fun onLeftButtonClick(dialogName : String){}
+        open fun onRightButtonClick(dialogName : String){}
+        open fun onDismiss(dialogName : String){}
     }
 
     companion object {
         const val DESIGN_SYSTEM_COMPONENTS_KEY  = "designComponentKey"
 
     }
-
 }
