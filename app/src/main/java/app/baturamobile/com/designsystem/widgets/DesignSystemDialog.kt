@@ -32,7 +32,7 @@ class DesignSystemDialog(@LayoutRes val layoutDialog : Int, @StyleRes val dialog
 
     override fun onDestroyView() {
         super.onDestroyView()
-        if(dismissOnClickButton.not()){
+        if(dismissOnClickButton){
             listener?.onDismiss(fragmentName)
         }
     }
