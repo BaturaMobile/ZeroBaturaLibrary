@@ -33,3 +33,11 @@ fun <T> Collection<T>.deepEqualToIgnoreOrder(other: Collection<T>): Boolean {
     // collections are same or they are contains same elements
     return true
 }
+
+fun <T> List<T>.getSafeValue(index : Int) : T? {
+    return try {
+        get(index)
+    }catch (ignore : Exception){
+        null
+    }
+}

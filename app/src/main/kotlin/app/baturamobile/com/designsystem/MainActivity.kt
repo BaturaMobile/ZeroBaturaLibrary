@@ -4,8 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import com.baturamobile.utils.collapsePanels
-import com.baturamobile.utils.expandNotificationPanel
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -30,12 +28,14 @@ class MainActivity : AppCompatActivity() {
         topbar.setOnClickListener {
             startActivity(Intent (this,Toolbar::class.java))
         }
-        bottomBar.setOnClickListener {
-            startActivity(Intent (this,BottomBar::class.java))
+        bottomBar.setOnClickListener{
+            val bottomNavDrawerFragment = BottomNavigationDrawerFragment()
+            bottomNavDrawerFragment.show(supportFragmentManager, bottomNavDrawerFragment.tag)
+           // startActivity(Intent (this,BottomBar::class.java))
         }
 
         bottomNavigation.setOnClickListener {
-            startActivity(Intent(this,BottomNavigationActivity::class.java))
+            startActivity(Intent(this, BottomNavigationActivity::class.java))
         }
 
         toast.setOnClickListener {
@@ -53,6 +53,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this,Dialogs::class.java))
         }
         bannerButton.setOnClickListener {
+            banner.iconDrawableRes = null
+            banner.show()
+        }
+        bannerImageButton.setOnClickListener {
+            banner.iconDrawableRes = getDrawable(R.drawable.avatar_40)
             banner.show()
         }
         chips.setOnClickListener {
@@ -63,9 +68,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this,Selections::class.java))
         }
 
-
-
-
+        empty.setOnClickListener {
+            startActivity(Intent(this,EmptyStateActivity::class.java))
+        }
 
         banner.setRightButtonAction {
             banner.dismiss()

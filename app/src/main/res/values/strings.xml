@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">DesignSystem</string>
+    <string name="app_name">Zero Android</string>
     <string name="title_activity_letters">LettersActivity</string>
     <string name="alarm">Alarma</string>
     <string name="power_off">Apagar</string>

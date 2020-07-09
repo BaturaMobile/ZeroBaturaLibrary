@@ -2,15 +2,20 @@ package app.baturamobile.com.designsystem.widgets
 
 import android.app.Dialog
 import android.content.Context
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
+import android.util.TypedValue
 import android.view.*
 import androidx.annotation.DrawableRes
 import androidx.annotation.LayoutRes
 import androidx.annotation.StyleRes
 import androidx.fragment.app.DialogFragment
+import app.baturamobile.com.designsystem.R
 import kotlinx.android.synthetic.main.standard_container_dialog.*
+import kotlinx.android.synthetic.main.standard_container_dialog.view.*
 import kotlinx.android.synthetic.main.standard_dialog.*
 import java.io.Serializable
+
 
 class DesignSystemDialog(@LayoutRes val layoutDialog : Int, @StyleRes val dialogTheme : Int, val dismissEnabled : Boolean = true) : DialogFragment() {
 
@@ -38,7 +43,20 @@ class DesignSystemDialog(@LayoutRes val layoutDialog : Int, @StyleRes val dialog
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(layoutDialog,container,false)
+        val view =  inflater.inflate(layoutDialog,container,false)
+        setBackground(view)
+        return view;
+    }
+
+    private fun setBackground(view : View) {
+
+        val contextWrapper = ContextThemeWrapper(context, dialogTheme)
+        val typedValue = TypedValue()
+        val theme = contextWrapper.theme
+        theme.resolveAttribute(R.attr.dialog_background_color, typedValue, true)
+        val drawable = ColorDrawable(typedValue.data)
+        drawable.alpha = 140
+        view.scd_main_container.background = drawable
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -135,10 +153,10 @@ class DesignSystemDialog(@LayoutRes val layoutDialog : Int, @StyleRes val dialog
                                  @DrawableRes val imageDrawable : Int? = null,
                                  val dialogName : String = ""): Serializable
 
-    open class DesignSystemDialogListener {
-        open fun onLeftButtonClick(dialogName : String){}
-        open fun onRightButtonClick(dialogName : String){}
-        open fun onDismiss(dialogName : String){}
+    interface DesignSystemDialogListener {
+        fun onLeftButtonClick(dialogName : String){}
+        fun onRightButtonClick(dialogName : String){}
+        fun onDismiss(dialogName : String){}
     }
 
     companion object {

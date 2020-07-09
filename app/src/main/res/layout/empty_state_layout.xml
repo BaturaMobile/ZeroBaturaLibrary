@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+            android:id="@+id/esl_image"
+            android:layout_width="152dp"
+            android:layout_height="152dp"
+            app:layout_constraintBottom_toTopOf="@+id/eml_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:srcCompat="@drawable/ic_empty" />
+
+    <Button
+            android:id="@+id/eml_button"
+            style="@style/textMaterialButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Crear Cuenta"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/esl_image"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/esl_image"
+            app:layout_constraintTop_toBottomOf="@+id/eml_title" />
+
+    <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/eml_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="21dp"
+            android:gravity="center"
+            android:text="Crea una cuenta para poder acceder a este apartado. Gracias."
+            style="@style/Body2Light"
+            app:layout_constraintBottom_toTopOf="@+id/eml_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eml_description" />
+
+    <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/eml_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="No hay datos que mostrar"
+            style="@style/Body2Bold"
+            app:layout_constraintBottom_toTopOf="@+id/eml_title"
+            app:layout_constraintEnd_toEndOf="@+id/esl_image"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/esl_image"
+            app:layout_constraintTop_toBottomOf="@+id/esl_image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,113 +10,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp">
-
-
-
-        <Button
-                android:text="BottomBar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/bottomBar" android:layout_marginTop="64dp"
-                app:layout_constraintTop_toBottomOf="@+id/texts" app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"/>
-
-        <Button
-                android:id="@+id/colors"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                android:text="Colors"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/banner" />
-        <Button
-                android:text="Buttons"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/buttons" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
-                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginTop="8dp"
-                app:layout_constraintTop_toBottomOf="@+id/colors"/>
-        <Button
-                android:text="Texts"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/texts" android:layout_marginTop="8dp"
-                app:layout_constraintTop_toBottomOf="@+id/buttons" app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"/>
-        <Button
-                android:text="TopBar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/topbar" android:layout_marginTop="8dp"
-                app:layout_constraintTop_toBottomOf="@+id/texts" app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"/>
-        <Button
-                android:text="BottomNavigation"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/bottomNavigation" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
-                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginTop="8dp"
-                app:layout_constraintTop_toBottomOf="@+id/bottomBar"/>
-
-        <Button
-                android:text="Toast -Snackbars"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/toast" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
-                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-                app:layout_constraintTop_toBottomOf="@+id/bottomNavigation" app:layout_constraintHorizontal_bias="0.483"/>
-        <Button
-                android:text="Forms"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/forms" app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@+id/toast"/>
-        <Button
-                android:text="List"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/lists"
-                app:layout_constraintStart_toStartOf="@+id/forms"
-                app:layout_constraintEnd_toEndOf="@+id/forms" app:layout_constraintTop_toBottomOf="@+id/forms"/>
-        <Button
-                android:text="Dialogs"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/dialogs"
-                app:layout_constraintTop_toBottomOf="@+id/lists" app:layout_constraintStart_toStartOf="@+id/lists"
-                app:layout_constraintEnd_toEndOf="@+id/lists"/>
-
-
-        <Button
-                android:id="@+id/bannerButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Banner"
-                app:layout_constraintEnd_toEndOf="@+id/lists"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/lists"
-                app:layout_constraintTop_toBottomOf="@+id/dialogs" />
-
-        <Button
-                android:id="@+id/chips"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Chips"
-                app:layout_constraintEnd_toEndOf="@+id/lists"
-                app:layout_constraintStart_toStartOf="@+id/lists"
-                app:layout_constraintTop_toBottomOf="@+id/bannerButton" />
-
-        <Button
-                android:id="@+id/selections"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Selections"
-                app:layout_constraintEnd_toEndOf="@+id/lists"
-                app:layout_constraintStart_toStartOf="@+id/lists"
-                app:layout_constraintTop_toBottomOf="@+id/chips" />
+            android:layout_height="wrap_content">
 
         <com.cesar.materialcomponents.Banner
                 android:id="@+id/banner"
@@ -124,10 +18,164 @@
                 android:layout_height="wrap_content"
                 android:visibility="gone"
                 app:contentText="Your password was updated on another device. Please sign in again"
+                app:icon="@drawable/avatar_40"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:leftButtonText="Continue as Guest"
-                app:rightButtonText="Sign in" />
+                app:rightButtonText="Sign in">
+
+        </com.cesar.materialcomponents.Banner>
+
+        <LinearLayout
+                android:id="@+id/components"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/banner">
+
+            <Button
+                    android:id="@+id/bannerButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Banner"/>
+
+
+            <Button
+                    android:id="@+id/bannerImageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Banner with Image" />
+
+            <Button
+                    android:id="@+id/colors"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Colors" />
+
+            <Button
+                    android:id="@+id/texts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Types" />
+
+            <Button
+                    android:id="@+id/buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Buttons" />
+
+            <Button
+                    android:id="@+id/bottomBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+
+                    android:layout_marginEnd="8dp"
+                    android:text="Bottom Sheet" />
+
+            <Button
+                    android:id="@+id/topbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="TopBar" />
+
+            <Button
+                    android:id="@+id/bottomNavigation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="BottomNavigation" />
+
+            <Button
+                    android:id="@+id/toast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Snackbars" />
+
+            <Button
+                    android:id="@+id/forms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="TextField" />
+
+            <Button
+                    android:id="@+id/lists"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="List" />
+
+            <Button
+                    android:id="@+id/dialogs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Dialogs" />
+
+
+
+
+            <Button
+                    android:id="@+id/chips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Chips" />
+
+            <Button
+                    android:id="@+id/selections"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Selection Control" />
+
+
+
+
+            <Button
+                    android:id="@+id/empty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="EmptyState" />
+        </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

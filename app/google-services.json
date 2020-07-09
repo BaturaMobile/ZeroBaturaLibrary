@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "471131498977",
+    "firebase_url": "https://zero-1e360.firebaseio.com",
+    "project_id": "zero-1e360",
+    "storage_bucket": "zero-1e360.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471131498977:android:7f72d442b702d9dc358aa0",
+        "android_client_info": {
+          "package_name": "app.baturamobile.com.designsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "471131498977-av0a2e815g32oliap6795nvk152v9sb4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8eCd_ceFdtCL324onpspk8VLlx2qY938"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "471131498977-av0a2e815g32oliap6795nvk152v9sb4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

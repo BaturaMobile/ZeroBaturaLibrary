@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="56dp"
+        tools:context=".ListsActivity">
+
+    <TextView
+            android:id="@+id/list_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Label"
+            android:textAppearance="@style/Caption2Regular"
+            app:layout_constraintBottom_toBottomOf="@+id/list_title"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toTopOf="@+id/list_title" />
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="16dp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/list_primary_image"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/avatar_40" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/list_title"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:text="One-line list"
+            android:textAppearance="@style/Body2Regular"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/list_secondary_image"
+            app:layout_constraintStart_toEndOf="@+id/list_primary_image"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/list_secondary_image"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

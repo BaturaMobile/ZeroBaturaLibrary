@@ -78,7 +78,7 @@ class BottomBar : AppCompatActivity() {
             Snackbar.LENGTH_LONG
         ).setAction("UNDO") {  }
         // Changing message text color
-        snackbar.setActionTextColor(ContextCompat.getColor(this, R.color.colorSnackbarButton))
+       // snackbar.setActionTextColor(ContextCompat.getColor(this, R.color.colorSnackbarButton))
         val snackbarView = snackbar.view
         val params = snackbarView.layoutParams as CoordinatorLayout.LayoutParams
 

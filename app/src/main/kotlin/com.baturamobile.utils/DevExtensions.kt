@@ -45,3 +45,16 @@ open class CallbackV2<in T> {
 }
 
 
+
+inline fun <T> T?.ifNotNull(block: (T) -> Unit): T? {
+    return this?.also {
+        block(it)
+    }
+}
+
+infix fun <T> T?.ifNull(block: () -> Unit) : T? {
+    if (this == null) block()
+    return this
+}
+
+

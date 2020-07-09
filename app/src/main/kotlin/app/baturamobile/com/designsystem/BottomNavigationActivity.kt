@@ -2,6 +2,7 @@ package app.baturamobile.com.designsystem
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import app.baturamobile.com.designsystem.R
 import kotlinx.android.synthetic.main.activity_bottom_navigation.*
 
 class BottomNavigationActivity : AppCompatActivity() {

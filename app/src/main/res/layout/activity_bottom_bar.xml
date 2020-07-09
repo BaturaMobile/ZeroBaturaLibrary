@@ -14,8 +14,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            app:backgroundTint="@color/colorPrimary"
             app:fabAlignmentMode="center"
+            app:backgroundTint="@color/colorPrimary"
             app:hideOnScroll="true"
             app:layout_scrollFlags="scroll|enterAlways"
             app:navigationIcon="@drawable/baseline_menu_white_24"/>

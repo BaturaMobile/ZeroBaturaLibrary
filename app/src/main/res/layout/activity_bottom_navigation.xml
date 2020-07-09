@@ -11,10 +11,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:background="@color/colorPrimary"
-            app:itemIconTint="@drawable/bottom_navigation_colors"
-            app:itemTextColor="@drawable/bottom_navigation_colors"
-            app:menu="@menu/bottomappbar_menu_secondary" app:itemTextAppearanceActive="@style/Caption2Bold"
+            app:menu="@menu/bottomappbar_menu_secondary"
+            app:itemTextAppearanceActive="@style/Caption2Bold"
             app:itemTextAppearanceInactive="@style/Caption2Regular"/>
 
 </FrameLayout>

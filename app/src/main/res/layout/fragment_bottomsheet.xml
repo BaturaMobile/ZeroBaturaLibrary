@@ -13,46 +13,29 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="16dp"
             android:paddingBottom="40dp"
+            app:itemTextAppearance="@style/Body1Regular"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view2"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
             app:menu="@menu/bottom_nav_drawer_menu"
-            app:theme="@style/NavigationDrawerStyle" app:itemTextAppearance="@style/Body1Regular"/>
+            app:theme="@style/NavigationDrawerStyle" />
 
     <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="32dp"
             android:layout_marginTop="16dp"
             android:text="@string/bottom_sheet_name"
-            android:textColor="@color/colorAccent"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintTop_toTopOf="parent" android:textAppearance="@style/Head4Bold"/>
 
-    <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            android:text="@string/bottom_sheet_email"
-            android:textColor="@color/colorAccent"
-            app:layout_constraintStart_toStartOf="@+id/textView"
-            app:layout_constraintTop_toBottomOf="@+id/textView" android:typeface="normal"
-            android:textAppearance="@style/Caption1Regular"/>
+            android:textAppearance="@style/Head4Bold"
 
-    <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="24dp"
-            android:background="@drawable/baseline_account_circle_black_48"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/textView" />
+            app:layout_constraintTop_toTopOf="parent" />
+
 
     <View
             android:id="@+id/view2"

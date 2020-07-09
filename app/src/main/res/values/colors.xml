@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#F4B709</color>
-    <color name="colorPrimaryDark">#dba508</color>
-    <color name="colorPrimaryLight">#fdf7e6</color>
+    <color name="colorPrimary">#8A7400</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#594A00</color>
 
-    <color name="base_500">#292929</color>
-    <color name="base_400">#757575</color>
-    <color name="base_200">#BDBDBD</color>
-    <color name="base_100">#F1F1F1</color>
-    <color name="basewhite">#FFFFFF</color>
+    <color name="colorSecondary">#DA143C</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
 
-    <color name="colorAccent">#f4b709</color>
+    <color name="colorSurface">#FAFAFA</color>
+    <color name="colorOnSurface">#1C1C1E</color>
+
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorOnBackground">#1C1C1E</color>
+
+    <color name="success">#50822C</color>
+    <color name="onSuccess">#FFFFFF</color>
+
+    <color name="alert">#B06400</color>
+    <color name="onAlert">#FFFFFF</color>
+
+    <color name="error">#d73946</color>
+    <color name="onError">#FFFFFF</color>
 
 
-    <color name="success">#689f38</color>
-    <color name="alert">#f4b709</color>
-    <color name="error">#e64a19</color>
-
-    <color name="colorSnackbarButton">#ef7f3e</color>
-
-    <color name="colorPrimary_70">#B3F4B709</color>
-    <color name="alert_70">#B3F4B709</color>
-    <color name="error_70">#B3E64A19</color>
-    <color name="success_70">#B3689F38</color>
 </resources>

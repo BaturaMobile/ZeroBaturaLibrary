@@ -10,10 +10,12 @@
             android:id="@+id/filter_chip_group"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toBottomOf="@+id/textView66">
 
         <com.google.android.material.chip.Chip
                 android:id="@+id/filter_chip"
@@ -42,30 +44,36 @@
             android:id="@+id/choice_chip_group"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            app:singleSelection="true"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/filter_chip_group">
+            app:layout_constraintTop_toBottomOf="@+id/textView45">
 
         <com.google.android.material.chip.Chip
                 android:id="@+id/choice_chip"
                 style="@style/Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Filtro1" />
+                android:text="Choice1"
+                app:chipIcon="@drawable/avatar_40"
+                app:chipIconEnabled="true" />
 
         <com.google.android.material.chip.Chip
                 android:id="@+id/choice_chip2"
                 style="@style/Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Filtro2" />
+                android:text="Choice 2" />
 
         <com.google.android.material.chip.Chip
                 android:id="@+id/choice_chip3"
                 style="@style/Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Filtro3" />
+                android:text="Choice 3" />
 
     </com.google.android.material.chip.ChipGroup>
 
@@ -74,20 +82,53 @@
             style="@style/Chip.Entry"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
             android:text="Entry Chip"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.447"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/choice_chip_group" />
+            app:layout_constraintTop_toBottomOf="@+id/action_chip" />
 
     <com.google.android.material.chip.Chip
             android:id="@+id/action_chip"
             style="@style/Chip.Action"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
             android:text="Action Chip"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             app:chipIcon="@drawable/avatar_40"
-            app:layout_constraintTop_toBottomOf="@+id/entry_chip" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView67" />
+
+    <TextView
+            android:id="@+id/textView45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Choice chip"
+            app:layout_constraintStart_toStartOf="@+id/choice_chip_group"
+            app:layout_constraintTop_toBottomOf="@+id/filter_chip_group" />
+
+    <TextView
+            android:id="@+id/textView66"
+            android:layout_width="68dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="32dp"
+            android:text="Filter Chip"
+            app:layout_constraintStart_toStartOf="@+id/filter_chip_group"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:id="@+id/textView67"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Action Chip"
+            app:layout_constraintStart_toStartOf="@+id/action_chip"
+            app:layout_constraintTop_toBottomOf="@+id/choice_chip_group" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

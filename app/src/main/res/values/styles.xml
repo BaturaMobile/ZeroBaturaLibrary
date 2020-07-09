@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
 
 
@@ -49,7 +49,6 @@
         <item name="android:textAllCaps">false</item>
         <item name="rippleColor">@color/alert</item>
         <item name="android:textColor">@color/alert_text_color</item>
-
     </style>
 
     <style name="successTextMaterialButton" parent="Widget.MaterialComponents.Button.TextButton">
@@ -62,50 +61,81 @@
 
 
     <!--Text styles -->
+    <style name="BigButton" parent="Button">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="SmallButton" parent="Button">
+        <item name="android:textSize">13sp</item>
+    </style>
 
     <style name="Button"  parent="TextAppearance.MaterialComponents.Button">
         <item name="android:textSize">15sp</item>
         <item name="android:letterSpacing">0.09</item>
         <item name="android:lineSpacingExtra">1sp</item>
-        <item name="android:textColor">@color/text_color</item>
+
         <item name="android:fontFamily">@font/bold</item>
         <item name="android:textAllCaps">false</item>
-        <item name="android:textColorPrimaryDisableOnly">@color/colorPrimary</item>
     </style>
 
-    <style name="Head1Bold" parent="TextAppearance.AppCompat">
+    <style name="Head" parent="TextAppearance.AppCompat">
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+
+    <style name="Head1Bold" parent="Head">
         <item name="android:fontFamily">@font/bold</item>
         <item name="android:textSize">34sp</item>
-
-        <!--<item name="android:textColor">@color/base_500</item>-->
+    </style>
+    <style name="Head1Medium" parent="Head">
+        <item name="android:fontFamily">@font/medium</item>
+        <item name="android:textSize">34sp</item>
+    </style>
+    <style name="Head1Light" parent="Head">
+        <item name="android:fontFamily">@font/book</item>
+        <item name="android:textSize">34sp</item>
     </style>
 
-    <style name="Head2Bold" parent="TextAppearance.AppCompat">
+    <style name="Head2Bold" parent="Head">
         <item name="android:fontFamily">@font/bold</item>
         <item name="android:textSize">28sp</item>
         <item name="android:lineSpacingExtra">6sp</item>
-       <!-- <item name="android:textColor">@color/base_500</item>-->
+    </style>
+    <style name="Head2Medium" parent="Head">
+        <item name="android:fontFamily">@font/medium</item>
+        <item name="android:textSize">28sp</item>
+
+    </style>
+    <style name="Head2Light" parent="Head">
+        <item name="android:fontFamily">@font/book</item>
+        <item name="android:textSize">28sp</item>
     </style>
 
-
-    <style name="Head3Bold" parent="TextAppearance.AppCompat">
+    <style name="Head3Bold" parent="Head">
         <item name="android:fontFamily">@font/bold</item>
         <item name="android:textSize">22sp</item>
-        <item name="android:lineSpacingExtra">6sp</item>
-     <!--   <item name="android:textColor">@color/base_500</item> -->
+    </style>
+    <style name="Head3Medium" parent="Head">
+        <item name="android:fontFamily">@font/medium</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+    <style name="Head3Light" parent="Head">
+        <item name="android:fontFamily">@font/book</item>
+        <item name="android:textSize">22sp</item>
     </style>
 
-    <style name="Head4" parent="TextAppearance.AppCompat">
+    <style name="Head4" parent="Head">
         <item name="android:textSize">20sp</item>
-        <item name="android:letterSpacing">0.02</item>
         <item name="android:lineSpacingExtra">4sp</item>
-     <!--   <item name="android:textColor">@color/base_500</item> -->
     </style>
 
-    <style name="Head4Regular" parent="Head4">
+    <style name="Head4Light" parent="Head4">
+        <item name="android:fontFamily">@font/book</item>
+    </style>
+
+    <style name="Head4Medium" parent="Head4">
         <item name="android:fontFamily">@font/medium</item>
     </style>
-
 
     <style name="Head4Bold" parent="Head4">
         <item name="android:fontFamily">@font/bold</item>
@@ -113,8 +143,7 @@
 
     <style name="Body1" parent="TextAppearance.AppCompat">
         <item name="android:textSize">17sp</item>
-        <item name="android:lineSpacingExtra">7sp</item>
-     <!--   <item name="android:textColor">@color/base_500</item> -->
+        <item name="android:lineSpacingExtra">5sp</item>
     </style>
 
 
@@ -132,8 +161,7 @@
 
     <style name="Body2" parent="TextAppearance.AppCompat">
         <item name="android:textSize">15sp</item>
-        <item name="android:lineSpacingExtra">5sp</item>
-     <!--   <item name="android:textColor">@color/base_500</item> -->
+        <item name="android:lineSpacingExtra">10sp</item>
     </style>
 
     <style name="Body2Light" parent="Body2">
@@ -150,8 +178,7 @@
 
     <style name="Caption1" parent="TextAppearance.AppCompat">
         <item name="android:textSize">13sp</item>
-        <!--<item name="android:lineSpacingExtra">3sp</item> -->
-       <!-- <item name="android:textColor">@color/base_500</item> -->
+        <item name="android:lineSpacingExtra">5sp</item>
     </style>
 
     <style name="Caption1Regular" parent="Caption1">
@@ -161,10 +188,13 @@
     <style name="Caption1Bold" parent="Caption1">
         <item name="android:fontFamily">@font/bold</item>
     </style>
+    <style name="Caption1Light" parent="Caption1">
+        <item name="android:fontFamily">@font/book</item>
+    </style>
 
     <style name="Caption2" parent="TextAppearance.AppCompat">
         <item name="android:textSize">11sp</item>
-       <!-- <item name="android:textColor">@color/base_500</item> -->
+        <item name="android:lineSpacingExtra">5sp</item>
     </style>
 
     <style name="Caption2Regular" parent="Caption2">
@@ -175,34 +205,43 @@
         <item name="android:fontFamily">@font/bold</item>
     </style>
 
+    <style name="Caption2Light" parent="Caption2">
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+
     <!-- Toolbar -->
 
     <style name="ToolbarTitle" parent="Head4Bold">
-        <!--<item name="android:textColor">@color/base_500</item> -->
+        <item name="android:textColor">@color/colorOnPrimary</item>
     </style>
 
     <style name="ToolbarSubtitle" parent="Body2">
-       <!-- <item name="android:textColor">@color/base_400</item> -->
+        <item name="android:textColor">@color/colorOnPrimary</item>
+    </style>
+
+    <style name="ToolbarTitleAlternative" parent="Head4Bold">
+    </style>
+
+    <style name="ToolbarSubtitleAlternative" parent="Body2">
+
     </style>
 
     <style name="itemTextAppearance">
         <item name="android:fontFamily">@font/bold</item>
         <item name="android:textSize">13sp</item>
-        <item name="android:textColor">@color/colorPrimary</item>
         <item name="android:textAllCaps">false</item>
     </style>
 
     <style name="ToolbarLight" parent="TextAppearance.AppCompat">
-        <item name="android:background">@color/basewhite</item>
-        <item name="colorPrimary">@color/basewhite</item>
+       <!-- <item name="android:background">@color/basewhite</item> -->
+       <!-- <item name="colorPrimary">@color/basewhite</item> -->
         <item name="actionMenuTextColor">@color/colorPrimary</item>
         <item name="android:actionMenuTextAppearance">@style/itemTextAppearance</item>
-        <item name="iconTint">@color/base_500</item>
+      <!--  <item name="iconTint">@color/base_500</item> -->
     </style>
 
 
     <style name="NavigationDrawerStyle">
-        <item name="android:textSize">16sp</item><!-- text size in menu-->
         <item name="android:listPreferredItemHeightSmall">56dp</item><!-- item size in menu-->
         <item name="listPreferredItemHeightSmall">56dp</item><!-- item size in menu-->
     </style>
@@ -248,9 +287,14 @@
         <item name="android:textAppearance">@style/Caption1Regular</item>
     </style>
     <style name="Chip.Filter" parent="Widget.MaterialComponents.Chip.Filter">
+        <item name="chipBackgroundColor" tools:ignore="PrivateResource" >@color/mtrl_choice_chip_background_color</item>
+        <item name="rippleColor" tools:ignore="PrivateResource">@color/mtrl_choice_chip_ripple_color</item>
+        <item name="android:textColor" tools:ignore="PrivateResource">@color/mtrl_choice_chip_text_color</item>
+        <item name="checkedIcon">@drawable/ic_chip_filter_checked</item>
         <item name="android:textAppearance">@style/Caption1Regular</item>
     </style>
     <style name="Chip.Choice" parent="Widget.MaterialComponents.Chip.Choice">
+
         <item name="android:textAppearance">@style/Caption1Regular</item>
     </style>
     <style name="Chip.Action" parent="Widget.MaterialComponents.Chip.Action">
