@@ -9,7 +9,7 @@
             android:id="@+id/esl_image"
             android:layout_width="152dp"
             android:layout_height="152dp"
-            app:layout_constraintBottom_toTopOf="@+id/eml_description"
+            app:layout_constraintBottom_toTopOf="@+id/esl_description"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -18,7 +18,7 @@
             app:srcCompat="@drawable/ic_empty" />
 
     <com.google.android.material.button.MaterialButton
-            android:id="@+id/eml_button"
+            android:id="@+id/esl_button"
             style="@style/textMaterialButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -28,10 +28,10 @@
             app:layout_constraintEnd_toEndOf="@+id/esl_image"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="@+id/esl_image"
-            app:layout_constraintTop_toBottomOf="@+id/eml_title" />
+            app:layout_constraintTop_toBottomOf="@+id/esl_title" />
 
     <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/eml_title"
+            android:id="@+id/esl_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="21dp"
@@ -40,20 +40,20 @@
             android:gravity="center"
             android:text="Crea una cuenta para poder acceder a este apartado. Gracias."
             style="@style/Body2Light"
-            app:layout_constraintBottom_toTopOf="@+id/eml_button"
+            app:layout_constraintBottom_toTopOf="@+id/esl_button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/eml_description" />
+            app:layout_constraintTop_toBottomOf="@+id/esl_description" />
 
     <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/eml_description"
+            android:id="@+id/esl_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="28dp"
             android:text="No hay datos que mostrar"
             style="@style/Body2Bold"
-            app:layout_constraintBottom_toTopOf="@+id/eml_title"
+            app:layout_constraintBottom_toTopOf="@+id/esl_title"
             app:layout_constraintEnd_toEndOf="@+id/esl_image"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="@+id/esl_image"
