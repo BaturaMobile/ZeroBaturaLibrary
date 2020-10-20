@@ -12,7 +12,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-        <com.cesar.materialcomponents.Banner
+        <app.baturamobile.com.designsystem.widgets.Banner
                 android:id="@+id/banner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -25,7 +25,7 @@
                 app:leftButtonText="Continue as Guest"
                 app:rightButtonText="Sign in">
 
-        </com.cesar.materialcomponents.Banner>
+        </app.baturamobile.com.designsystem.widgets.Banner>
 
         <LinearLayout
                 android:id="@+id/components"
@@ -37,145 +37,261 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/banner">
 
-            <Button
+            <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/bannerButton"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="32dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
-                    android:text="Banner"/>
+                    android:gravity="center_vertical"
+                    android:text="Banner" />
 
 
-            <Button
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/black" />
+
+            <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/bannerImageButton"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="32dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
+                    android:gravity="center_vertical"
                     android:text="Banner with Image" />
 
-            <Button
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/black" />
+
+            <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/colors"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="32dp"
                     android:layout_marginEnd="8dp"
+                    android:gravity="center_vertical"
                     android:text="Colors" />
 
-            <Button
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/black" />
+
+            <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/texts"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="32dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
+                    android:gravity="center_vertical"
                     android:text="Types" />
 
-            <Button
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/black" />
+
+            <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/buttons"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="32dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
+                    android:gravity="center_vertical"
                     android:text="Buttons" />
 
-            <Button
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/black" />
+
+            <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/bottomBar"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="32dp"
 
                     android:layout_marginEnd="8dp"
+                    android:gravity="center_vertical"
                     android:text="Bottom Sheet" />
 
-            <Button
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/black" />
+
+            <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/topbar"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="32dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
+                    android:gravity="center_vertical"
                     android:text="TopBar" />
 
-            <Button
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/black" />
+
+            <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/bottomNavigation"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="32dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
+                    android:gravity="center_vertical"
                     android:text="BottomNavigation" />
 
-            <Button
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/black" />
+
+            <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/toast"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="32dp"
                     android:layout_marginEnd="8dp"
+                    android:gravity="center_vertical"
                     android:text="Snackbars" />
 
-            <Button
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/black" />
+
+            <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/forms"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="32dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
+                    android:gravity="center_vertical"
                     android:text="TextField" />
 
-            <Button
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/black" />
+
+            <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/lists"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="32dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
+                    android:gravity="center_vertical"
                     android:text="List" />
 
-            <Button
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/black" />
+
+            <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/dialogs"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="32dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
+                    android:gravity="center_vertical"
                     android:text="Dialogs" />
 
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/black" />
 
 
-
-            <Button
+            <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/chips"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="32dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
+                    android:gravity="center_vertical"
                     android:text="Chips" />
 
-            <Button
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/black" />
+
+            <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/selections"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="32dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
+                    android:gravity="center_vertical"
                     android:text="Selection Control" />
 
 
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/black" />
 
-
-            <Button
+            <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/empty"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="32dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
+                    android:gravity="center_vertical"
                     android:text="EmptyState" />
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/black" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

@@ -23,6 +23,7 @@ class Dialogs : AppCompatActivity(),DesignSystemDialog.DesignSystemDialogListene
 
             fragment.show(supportFragmentManager,"")
 
+
         }
 
         ad_dialog_head.setOnClickListener {

@@ -31,7 +31,8 @@ class ToastActivity : AppCompatActivity() {
             Snackbar.make(toast_container,"Greyhound divisively hello coldly wonderfully marginally far upon.",Snackbar.LENGTH_SHORT)
                 .setAction("Button", View.OnClickListener {
 
-                }).show()
+                })
+                .show()
         }
 
 
