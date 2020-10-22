@@ -1,5 +1,6 @@
 package com.baturamobile.utils
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.util.Log
 import android.view.View
@@ -7,6 +8,7 @@ import android.widget.Toast
 
 private val TAGACTIVITY = "ActivityExtentions"
 
+@SuppressLint("WrongConstant")
 fun Activity.expandNotificationPanel(){
     try{
 
@@ -22,6 +24,7 @@ fun Activity.expandNotificationPanel(){
     }
 }
 
+@SuppressLint("WrongConstant")
 fun Activity.collapsePanels(){
     try{
 
