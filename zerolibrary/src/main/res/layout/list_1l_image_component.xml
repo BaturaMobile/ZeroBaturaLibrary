@@ -4,8 +4,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:minHeight="56dp"
-        tools:context=".ListsActivity">
+        android:minHeight="56dp">
 
     <TextView
             android:id="@+id/list_label"
@@ -43,30 +42,15 @@
             android:layout_width="0dp"
             android:layout_height="20dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="13dp"
             android:gravity="center_vertical"
             android:lines="1"
-            android:text="Three-line list"
-            style="@style/Body2Bold"
-            app:layout_constraintBottom_toTopOf="@+id/list_subtitle"
+            android:text="One-line list"
+            android:textAppearance="@style/Body2Regular"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/list_secondary_image"
             app:layout_constraintStart_toEndOf="@+id/list_primary_image"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_chainStyle="spread" />
-
-    <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/list_subtitle"
-            style="@style/Caption1Regular"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            android:layout_marginBottom="13dp"
-            android:text="This is caption text for three lines \ndescription needes."
-            android:visibility="visible"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/list_secondary_image"
-            app:layout_constraintStart_toStartOf="@+id/list_title"
-            app:layout_constraintTop_toBottomOf="@+id/list_title" />
 
     <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/list_secondary_image"

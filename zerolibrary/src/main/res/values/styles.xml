@@ -1,11 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-
-
     <!-- Buttons Styles -->
     <style name="materialButton" parent="Widget.MaterialComponents.Button">
         <item name="android:textSize">15sp</item>
-        <item name="android:fontFamily">@font/bold</item>
+        <item name="android:fontFamily">?attr/font_bold</item>
         <item name="android:textAllCaps">false</item>
         <item name="colorAccent">@color/colorPrimary</item>
         <item name="android:textColor">@android:color/white</item>
@@ -14,7 +12,7 @@
 
     <style name="materialSummitButton" parent="Widget.MaterialComponents.Button">
         <item name="android:textSize">15sp</item>
-        <item name="android:fontFamily">@font/bold</item>
+        <item name="android:fontFamily">?attr/font_bold</item>
         <item name="android:textAllCaps">false</item>
         <item name="colorAccent">@color/colorPrimary</item>
         <item name="android:textColor">@android:color/white</item>
@@ -23,7 +21,7 @@
 
     <style name="outlineMaterialButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
         <item name="android:textSize">15sp</item>
-        <item name="android:fontFamily">@font/bold</item>
+        <item name="android:fontFamily">?attr/font_bold</item>
         <item name="android:textAllCaps">false</item>
         <item name="strokeColor">?attr/colorPrimary</item>
 
@@ -31,13 +29,13 @@
 
     <style name="textMaterialButton" parent="Widget.MaterialComponents.Button.TextButton">
         <item name="android:textSize">15sp</item>
-        <item name="android:fontFamily">@font/bold</item>
+        <item name="android:fontFamily">?attr/font_bold</item>
         <item name="android:textAllCaps">false</item>
     </style>
 
     <style name="errorTextMaterialButton" parent="Widget.MaterialComponents.Button.TextButton">
         <item name="android:textSize">15sp</item>
-        <item name="android:fontFamily">@font/bold</item>
+        <item name="android:fontFamily">?attr/font_bold</item>
         <item name="android:textAllCaps">false</item>
         <item name="rippleColor">@color/error</item>
        <item name="android:textColor">@color/error</item>
@@ -45,7 +43,7 @@
 
     <style name="alertTextMaterialButton" parent="Widget.MaterialComponents.Button.TextButton">
         <item name="android:textSize">15sp</item>
-        <item name="android:fontFamily">@font/bold</item>
+        <item name="android:fontFamily">?attr/font_bold</item>
         <item name="android:textAllCaps">false</item>
         <item name="rippleColor">@color/alert</item>
         <item name="android:textColor">@color/alert</item>
@@ -53,7 +51,7 @@
 
     <style name="successTextMaterialButton" parent="Widget.MaterialComponents.Button.TextButton">
         <item name="android:textSize">15sp</item>
-        <item name="android:fontFamily">@font/bold</item>
+        <item name="android:fontFamily">?attr/font_bold</item>
         <item name="android:textAllCaps">false</item>
         <item name="rippleColor">@color/success</item>
         <item name="android:textColor">@color/success</item>
@@ -74,7 +72,7 @@
         <item name="android:letterSpacing">0.09</item>
         <item name="android:lineSpacingExtra">1sp</item>
 
-        <item name="android:fontFamily">@font/bold</item>
+        <item name="android:fontFamily">?attr/font_bold</item>
         <item name="android:textAllCaps">false</item>
     </style>
 
@@ -84,43 +82,43 @@
     </style>
 
     <style name="Head1Bold" parent="Head">
-        <item name="android:fontFamily">@font/bold</item>
+        <item name="android:fontFamily">?attr/font_bold</item>
         <item name="android:textSize">34sp</item>
     </style>
     <style name="Head1Medium" parent="Head">
-        <item name="android:fontFamily">@font/medium</item>
+        <item name="android:fontFamily">?attr/font_medium</item>
         <item name="android:textSize">34sp</item>
     </style>
     <style name="Head1Light" parent="Head">
-        <item name="android:fontFamily">@font/book</item>
+        <item name="android:fontFamily">?attr/font_light</item>
         <item name="android:textSize">34sp</item>
     </style>
 
     <style name="Head2Bold" parent="Head">
-        <item name="android:fontFamily">@font/bold</item>
+        <item name="android:fontFamily">?attr/font_bold</item>
         <item name="android:textSize">28sp</item>
         <item name="android:lineSpacingExtra">6sp</item>
     </style>
     <style name="Head2Medium" parent="Head">
-        <item name="android:fontFamily">@font/medium</item>
+        <item name="android:fontFamily">?attr/font_medium</item>
         <item name="android:textSize">28sp</item>
 
     </style>
     <style name="Head2Light" parent="Head">
-        <item name="android:fontFamily">@font/book</item>
+        <item name="android:fontFamily">?attr/font_light</item>
         <item name="android:textSize">28sp</item>
     </style>
 
     <style name="Head3Bold" parent="Head">
-        <item name="android:fontFamily">@font/bold</item>
+        <item name="android:fontFamily">?attr/font_bold</item>
         <item name="android:textSize">22sp</item>
     </style>
     <style name="Head3Medium" parent="Head">
-        <item name="android:fontFamily">@font/medium</item>
+        <item name="android:fontFamily">?attr/font_medium</item>
         <item name="android:textSize">22sp</item>
     </style>
     <style name="Head3Light" parent="Head">
-        <item name="android:fontFamily">@font/book</item>
+        <item name="android:fontFamily">?attr/font_light</item>
         <item name="android:textSize">22sp</item>
     </style>
 
@@ -130,15 +128,15 @@
     </style>
 
     <style name="Head4Light" parent="Head4">
-        <item name="android:fontFamily">@font/book</item>
+        <item name="android:fontFamily">?attr/font_light</item>
     </style>
 
     <style name="Head4Medium" parent="Head4">
-        <item name="android:fontFamily">@font/medium</item>
+        <item name="android:fontFamily">?attr/font_medium</item>
     </style>
 
     <style name="Head4Bold" parent="Head4">
-        <item name="android:fontFamily">@font/bold</item>
+        <item name="android:fontFamily">?attr/font_bold</item>
     </style>
 
     <style name="Body1" parent="TextAppearance.AppCompat">
@@ -148,15 +146,15 @@
 
 
     <style name="Body1Light" parent="Body1">
-        <item name="android:fontFamily">@font/book</item>
+        <item name="android:fontFamily">?attr/font_light</item>
     </style>
 
     <style name="Body1Bold" parent="Body1">
-        <item name="android:fontFamily">@font/bold</item>
+        <item name="android:fontFamily">?attr/font_bold</item>
     </style>
 
     <style name="Body1Regular" parent="Body1">
-        <item name="android:fontFamily">@font/medium</item>
+        <item name="android:fontFamily">?attr/font_medium</item>
     </style>
 
     <style name="Body2" parent="TextAppearance.AppCompat">
@@ -165,15 +163,15 @@
     </style>
 
     <style name="Body2Light" parent="Body2">
-        <item name="android:fontFamily">@font/book</item>
+        <item name="android:fontFamily">?attr/font_light</item>
     </style>
 
     <style name="Body2Bold" parent="Body2">
-        <item name="android:fontFamily">@font/bold</item>
+        <item name="android:fontFamily">?attr/font_bold</item>
     </style>
 
     <style name="Body2Regular" parent="Body2">
-        <item name="android:fontFamily">@font/medium</item>
+        <item name="android:fontFamily">?attr/font_medium</item>
     </style>
 
     <style name="Caption1" parent="TextAppearance.AppCompat">
@@ -182,14 +180,14 @@
     </style>
 
     <style name="Caption1Regular" parent="Caption1">
-        <item name="android:fontFamily">@font/medium</item>
+        <item name="android:fontFamily">?attr/font_medium</item>
     </style>
 
     <style name="Caption1Bold" parent="Caption1">
-        <item name="android:fontFamily">@font/bold</item>
+        <item name="android:fontFamily">?attr/font_bold</item>
     </style>
     <style name="Caption1Light" parent="Caption1">
-        <item name="android:fontFamily">@font/book</item>
+        <item name="android:fontFamily">?attr/font_light</item>
     </style>
 
     <style name="Caption2" parent="TextAppearance.AppCompat">
@@ -198,15 +196,15 @@
     </style>
 
     <style name="Caption2Regular" parent="Caption2">
-        <item name="android:fontFamily">@font/medium</item>
+        <item name="android:fontFamily">?attr/font_medium</item>
     </style>
 
     <style name="Caption2Bold" parent="Caption2">
-        <item name="android:fontFamily">@font/bold</item>
+        <item name="android:fontFamily">?attr/font_bold</item>
     </style>
 
     <style name="Caption2Light" parent="Caption2">
-        <item name="android:fontFamily">@font/bold</item>
+        <item name="android:fontFamily">?attr/font_bold</item>
     </style>
 
     <!-- Toolbar -->
@@ -227,7 +225,7 @@
     </style>
 
     <style name="itemTextAppearance">
-        <item name="android:fontFamily">@font/bold</item>
+        <item name="android:fontFamily">?attr/font_bold</item>
         <item name="android:textSize">13sp</item>
         <item name="android:textAllCaps">false</item>
     </style>
@@ -262,17 +260,17 @@
 
     <style name="Error_appearance" parent="TextAppearance.Design.Error">
         <item name="android:textSize">12sp</item>
-        <item name="android:fontFamily">@font/medium</item>
+        <item name="android:fontFamily">?attr/font_medium</item>
     </style>
 
     <style name="Helper_text_appearance" parent="TextAppearance.Design.Error">
         <item name="android:textSize">12sp</item>
-        <item name="android:fontFamily">@font/medium</item>
+        <item name="android:fontFamily">?attr/font_medium</item>
     </style>
 
     <style name="Hint_text_appearance" parent="TextAppearance.AppCompat.Caption">
         <item name="android:textSize">11sp</item>
-        <item name="android:fontFamily">@font/medium</item>
+        <item name="android:fontFamily">?attr/font_medium</item>
     </style>
 
 

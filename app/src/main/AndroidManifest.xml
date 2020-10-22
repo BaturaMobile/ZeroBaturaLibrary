@@ -35,6 +35,10 @@
                 android:label="@string/title_activity_letters" />
         <activity android:name=".TypeColorActivity" />
         <activity android:name=".Buttons" />
+
+        <meta-data
+                android:name="preloaded_fonts"
+                android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

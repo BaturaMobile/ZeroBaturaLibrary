@@ -49,6 +49,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="120dp"
+                    android:fontFamily="@font/arima_madurai_bold"
                     android:text="@string/primary_screen_text"
                     android:textSize="18sp"
                     android:textStyle="bold"

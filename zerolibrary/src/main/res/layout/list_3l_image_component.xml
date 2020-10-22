@@ -1,30 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".ListsActivity" android:minHeight="48dp">
+        android:minHeight="56dp">
 
-    <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline7"
+    <TextView
+            android:id="@+id/list_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_begin="32dp" />
+            android:text="Label"
+            android:textAppearance="@style/Caption2Regular"
+            app:layout_constraintBottom_toBottomOf="@+id/list_title"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toTopOf="@+id/list_title" />
 
     <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_end="32dp" />
+            app:layout_constraintGuide_end="16dp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/list_primary_image"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/avatar_40" />
 
     <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/list_title"
             android:layout_width="0dp"
             android:layout_height="20dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="13dp"
             android:gravity="center_vertical"
             android:lines="1"
@@ -32,18 +49,18 @@
             style="@style/Body2Bold"
             app:layout_constraintBottom_toTopOf="@+id/list_subtitle"
             app:layout_constraintEnd_toStartOf="@+id/list_secondary_image"
-            app:layout_constraintStart_toStartOf="@+id/guideline7"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toEndOf="@+id/list_primary_image"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="spread" />
 
     <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/list_subtitle"
+            style="@style/Caption1Regular"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
-            android:layout_marginBottom="15dp"
-            android:maxLines="2"
+            android:layout_marginBottom="13dp"
             android:text="This is caption text for three lines \ndescription needes."
-            style="@style/Caption1Regular"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/list_secondary_image"
@@ -59,26 +76,5 @@
             app:layout_constraintEnd_toStartOf="@+id/guideline8"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@android:drawable/ic_menu_view" />
-
-    <com.google.android.material.button.MaterialButton
-            android:id="@+id/sd_left_button"
-            style="@style/textMaterialButton"
-            android:layout_width="81dp"
-            android:layout_height="wrap_content"
-            android:text="Button"
-            android:visibility="gone"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/guideline8"
-            app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-            android:id="@+id/list_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Label"
-            android:textAppearance="@style/Caption2Regular"
-            app:layout_constraintBottom_toBottomOf="@+id/list_title"
-            app:layout_constraintEnd_toStartOf="@+id/guideline8"
-            app:layout_constraintTop_toTopOf="@+id/list_title" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

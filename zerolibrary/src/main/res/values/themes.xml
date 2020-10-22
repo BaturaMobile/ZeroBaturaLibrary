@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ZeroAppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
+
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorOnSurface">@color/colorOnSurface</item>
+
+        <item name="iconTint">@android:color/white</item>
+
+        <item name="font_medium">@font/medium</item>
+        <item name="font_bold">@font/bold</item>
+        <item name="font_light">@font/book</item>
+
+    </style>
+
+    <style name="ZeroDialogsThemePrimary" parent="ZeroDialogsThemeCustomBackground">
+    <item name="dialog_background_color">@color/colorPrimary</item>
+</style>
+
+    <style name="ZeroDialogsThemeSuccess" parent="ZeroDialogsThemeCustomBackground">
+        <item name="dialog_background_color">@color/success</item>
+        <item name="colorPrimaryDark">@color/success</item>
+    </style>
+
+    <style name="ZeroDialogsThemeError" parent="ZeroDialogsThemeCustomBackground">
+        <item name="dialog_background_color">@color/error</item>
+        <item name="colorPrimaryDark">@color/error</item>
+    </style>
+
+    <style name="ZeroDialogsThemeAlert" parent="ZeroDialogsThemeCustomBackground">
+        <item name="dialog_background_color">@color/alert</item>
+        <item name="colorPrimaryDark">@color/alert</item>
+    </style>
+
+    <style name="ZeroDialogsThemeCustomBackground" parent="ZeroDialogsThemeBase">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="ZeroDialogsThemeBase" parent="@style/Theme.MaterialComponents.Light.Dialog">
+        <item name="dialog_background_color">@android:color/transparent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorSecondary">@color/colorPrimary</item>
+        <item name="colorOnSecondary">@color/colorPrimaryDark</item>
+        <item name="colorAccent">?attr/colorPrimary</item>
+        <item name="iconTint">@android:color/white</item>
+        <item name="android:windowAnimationStyle">@style/DialogsAnimation.Window</item>
+    </style>
+
+</resources>

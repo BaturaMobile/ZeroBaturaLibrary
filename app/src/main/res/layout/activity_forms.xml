@@ -8,22 +8,24 @@
         tools:context=".FormsActivity">
 
     <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/normal_form"
+            style="@style/BaturaForm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
             android:layout_marginEnd="16dp"
-            app:startIconDrawable="@drawable/ic_point"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:passwordToggleEnabled="true"
-            style="@style/BaturaForm" android:id="@+id/normal_form">
+            app:startIconDrawable="@drawable/ic_point">
 
         <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:inputType="textPassword"/>
-                android:hint="hint" />
+                android:hint="password"
+                android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -42,7 +44,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
 
-                android:hint="hint"/>
+                android:hint="Error mode"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -54,12 +56,12 @@
             style="@style/BaturaForm" android:id="@+id/assistive_form"
             app:layout_constraintTop_toBottomOf="@+id/error_form"
             app:endIconMode="clear_text"
-            app:helperText="TRURUR" android:layout_marginTop="24dp">
+            app:helperText="Helper text" android:layout_marginTop="24dp">
 
         <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="hint"/>
+                android:hint="hint text"/>
     </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,6 +3,10 @@
 <resources>
     <attr name="dialog_background_color" format="color"/>
 
+    <attr name="font_medium" format="reference"/>
+    <attr name="font_bold" format="reference"/>
+    <attr name="font_light" format="reference"/>
+
     <declare-styleable name="Banner">
         <attr name="contentText" format="string|reference"/>
         <attr name="leftButtonText" format="string|reference"/>
@@ -12,6 +16,15 @@
         <attr name="contentTextColor" format="color"/>
         <attr name="buttonsTextColor" format="color"/>
         <attr name="bannerBackgroundColor" format="color"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="EmptyState">
+        <attr name="emptyButtonText" format="string|reference"/>
+        <attr name="emptyTitleText" format="string|reference"/>
+        <attr name="emptyDescriptionText" format="string|reference"/>
+        <attr name="emptyImage" format="reference"/>
+
 
     </declare-styleable>
 </resources>

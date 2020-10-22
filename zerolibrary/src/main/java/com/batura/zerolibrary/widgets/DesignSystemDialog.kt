@@ -1,4 +1,4 @@
-package app.baturamobile.com.designsystem.widgets
+package com.batura.zerolibrary.widgets
 
 import android.app.Dialog
 import android.content.Context
@@ -10,7 +10,7 @@ import androidx.annotation.DrawableRes
 import androidx.annotation.LayoutRes
 import androidx.annotation.StyleRes
 import androidx.fragment.app.DialogFragment
-import app.baturamobile.com.designsystem.R
+import com.batura.zerolibrary.R
 import kotlinx.android.synthetic.main.standard_container_dialog.*
 import kotlinx.android.synthetic.main.standard_container_dialog.view.*
 import kotlinx.android.synthetic.main.standard_dialog.*

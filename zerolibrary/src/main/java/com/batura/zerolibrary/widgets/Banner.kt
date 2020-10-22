@@ -1,4 +1,4 @@
-package app.baturamobile.com.designsystem.widgets
+package com.batura.zerolibrary.widgets
 
 import android.content.Context
 import android.graphics.drawable.Drawable
@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import android.view.animation.Animation
 import android.view.animation.Transformation
 import android.widget.FrameLayout
-import app.baturamobile.com.designsystem.R
+import com.batura.zerolibrary.R
 import kotlinx.android.synthetic.main.material_banner.view.*
 
 class Banner : FrameLayout {

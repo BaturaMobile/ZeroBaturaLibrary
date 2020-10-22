@@ -15,7 +15,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_chainStyle="packed"
-            app:srcCompat="@drawable/ic_empty" />
+            tools:srcCompat="@drawable/ic_empty" />
 
     <com.google.android.material.button.MaterialButton
             android:id="@+id/esl_button"
@@ -23,7 +23,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Crear Cuenta"
+            tools:text="Crear Cuenta"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/esl_image"
             app:layout_constraintHorizontal_bias="0.5"
@@ -38,7 +38,7 @@
             android:layout_marginTop="28dp"
             android:layout_marginEnd="21dp"
             android:gravity="center"
-            android:text="Crea una cuenta para poder acceder a este apartado. Gracias."
+            tools:text="Crea una cuenta para poder acceder a este apartado. Gracias."
             style="@style/Body2Light"
             app:layout_constraintBottom_toTopOf="@+id/esl_button"
             app:layout_constraintEnd_toEndOf="parent"
@@ -51,7 +51,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="28dp"
-            android:text="No hay datos que mostrar"
+            tools:text="No hay datos que mostrar"
             style="@style/Body2Bold"
             app:layout_constraintBottom_toTopOf="@+id/esl_title"
             app:layout_constraintEnd_toEndOf="@+id/esl_image"

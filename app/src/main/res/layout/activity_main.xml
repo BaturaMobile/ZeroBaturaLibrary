@@ -12,7 +12,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-        <app.baturamobile.com.designsystem.widgets.Banner
+        <com.batura.zerolibrary.widgets.Banner
                 android:id="@+id/banner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -25,7 +25,7 @@
                 app:leftButtonText="Continue as Guest"
                 app:rightButtonText="Sign in">
 
-        </app.baturamobile.com.designsystem.widgets.Banner>
+        </com.batura.zerolibrary.widgets.Banner>
 
         <LinearLayout
                 android:id="@+id/components"

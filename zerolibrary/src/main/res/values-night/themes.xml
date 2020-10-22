@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorSecondary">@color/colorPrimary</item>
+        <item name="colorOnSecondary">@android:color/white</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="iconTint">@android:color/white</item>
+       <!-- <item name="colorSurface">@color/base_500</item>
+        <item name="colorOnSurface">@color/basewhite</item> -->
+        <!--  <item name="actionBarTheme">@style/ToolbarLight</item> -->
+        <!-- <item name="colorButtonNormal">@color/colorAccent</item> -->
+        <!-- <item name="colorOnPrimary">@android:color/white</item>-->
+        <!--<item name="colorOnPrimaryDisabled">@android:color/white</item>-->
+    </style>
+
+
+    <style name="DialogsThemeBase" parent="@style/Theme.MaterialComponents.Dialog">
+        <item name="dialog_background_color">@android:color/transparent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorSecondary">@color/colorPrimary</item>
+        <item name="colorOnSecondary">@color/colorPrimaryDark</item>
+        <item name="colorAccent">?attr/colorPrimary</item>
+        <item name="iconTint">@android:color/white</item>
+        <item name="android:windowAnimationStyle">@style/DialogsAnimation.Window</item>
+       <!-- <item name="colorSurface">@color/basewhite</item> -->
+    </style>
+
+</resources>

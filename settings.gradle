@@ -1,1 +1,2 @@
+include ':zerolibrary'
 include ':app'

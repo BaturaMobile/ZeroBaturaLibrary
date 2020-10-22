@@ -7,7 +7,7 @@
                                                    android:layout_height="match_parent"
                                                    tools:showIn="@layout/activity_letters">
 
-    <androidx.appcompat.widget.AppCompatTextView
+    <com.google.android.material.textview.MaterialTextView
             android:text="Caption 2 Bold 11/14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -15,7 +15,7 @@
             android:layout_marginStart="8dp" android:layout_marginTop="8dp"
             android:textColor="@color/colorPrimary" app:layout_constraintTop_toBottomOf="@+id/textView60"
             android:textSize="11sp"/>
-    <androidx.appcompat.widget.AppCompatTextView
+    <com.google.android.material.textview.MaterialTextView
             android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -25,14 +25,14 @@
             android:layout_marginEnd="8dp"
             style="@style/Caption2Bold" app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"/>
-    <androidx.appcompat.widget.AppCompatTextView
+    <com.google.android.material.textview.MaterialTextView
             android:text="Caption 2 Regular"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView64" app:layout_constraintStart_toStartOf="@+id/guideline3"
             android:textColor="@color/colorPrimary" app:layout_constraintTop_toBottomOf="@+id/textView61"
             android:textSize="11sp" android:layout_marginTop="8dp" android:layout_marginStart="8dp"/>
-    <androidx.appcompat.widget.AppCompatTextView
+    <com.google.android.material.textview.MaterialTextView
             android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
             style="@style/Caption2Regular"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="8dp"
             app:layout_constraintHorizontal_bias="0.0"/>
-    <androidx.appcompat.widget.AppCompatTextView
+    <com.google.android.material.textview.MaterialTextView
             android:text="Caption 1 Bold 13/16"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -50,7 +50,7 @@
             android:layout_marginStart="8dp" android:layout_marginTop="8dp"
             android:textColor="@color/colorPrimary" app:layout_constraintTop_toBottomOf="@+id/textView52"
             android:textSize="11sp"/>
-    <androidx.appcompat.widget.AppCompatTextView
+    <com.google.android.material.textview.MaterialTextView
             android:text="Caption 1 Regular"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -58,7 +58,7 @@
             android:layout_marginStart="8dp"
             android:textColor="@color/colorPrimary" app:layout_constraintTop_toBottomOf="@+id/textView55"
             android:textSize="11sp" android:layout_marginTop="8dp"/>
-    <androidx.appcompat.widget.AppCompatTextView
+    <com.google.android.material.textview.MaterialTextView
             android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -68,7 +68,7 @@
             android:layout_marginEnd="8dp"
             style= "@style/Caption1Bold" app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"/>
-    <androidx.appcompat.widget.AppCompatTextView
+    <com.google.android.material.textview.MaterialTextView
             android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -78,7 +78,7 @@
             style="@style/Caption1Regular"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="8dp"
             app:layout_constraintHorizontal_bias="0.0"/>
-    <androidx.appcompat.widget.AppCompatTextView
+    <com.google.android.material.textview.MaterialTextView
             android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -88,7 +88,7 @@
             android:layout_marginEnd="8dp"
             style="@style/Body2Bold" app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintEnd_toStartOf="@+id/guideline4"/>
-    <androidx.appcompat.widget.AppCompatTextView
+    <com.google.android.material.textview.MaterialTextView
             android:text="Body 2 Bold 15/20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -97,7 +97,7 @@
             android:textColor="@color/colorPrimary" app:layout_constraintTop_toBottomOf="@+id/textView46"
             android:textSize="11sp"
             android:layout_marginStart="8dp"/>
-    <androidx.appcompat.widget.AppCompatTextView
+    <com.google.android.material.textview.MaterialTextView
             android:text="Body 2 Regular"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -105,7 +105,7 @@
             android:textColor="@color/colorPrimary"
             android:textSize="11sp"
             app:layout_constraintTop_toTopOf="@+id/textView53" android:layout_marginStart="8dp"/>
-    <androidx.appcompat.widget.AppCompatTextView
+    <com.google.android.material.textview.MaterialTextView
             android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -115,7 +115,7 @@
             android:layout_marginEnd="8dp"
             style="@style/Body2Regular" app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintEnd_toStartOf="@+id/guideline5" app:layout_constraintStart_toEndOf="@+id/textView46"/>
-    <androidx.appcompat.widget.AppCompatTextView
+    <com.google.android.material.textview.MaterialTextView
             android:text="Body 2 Light"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -123,7 +123,7 @@
             android:textColor="@color/colorPrimary"
             android:textSize="11sp"
             app:layout_constraintTop_toTopOf="@+id/textView54"/>
-    <androidx.appcompat.widget.AppCompatTextView
+    <com.google.android.material.textview.MaterialTextView
             android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -133,7 +133,7 @@
             android:layout_marginEnd="8dp"
             style="@style/Body2Light" app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="@+id/guideline5"/>
-    <androidx.appcompat.widget.AppCompatTextView
+    <com.google.android.material.textview.MaterialTextView
             android:text="Body 1 Light "
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -146,7 +146,7 @@
                                                 android:id="@+id/guideline6"
                                                 android:orientation="vertical"
                                                 app:layout_constraintGuide_end="190dp"/>
-    <androidx.appcompat.widget.AppCompatTextView
+    <com.google.android.material.textview.MaterialTextView
             android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -156,7 +156,7 @@
             android:layout_marginEnd="8dp"
             style="@style/Body1Light" app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="@+id/guideline5"/>
-    <androidx.appcompat.widget.AppCompatTextView
+    <com.google.android.material.textview.MaterialTextView
             android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -166,7 +166,7 @@
             android:layout_marginEnd="8dp"
             style="@style/Body1Regular" app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintEnd_toStartOf="@+id/guideline5" app:layout_constraintStart_toEndOf="@+id/textView46"/>
-    <androidx.appcompat.widget.AppCompatTextView
+    <com.google.android.material.textview.MaterialTextView
             android:text="Body 1 Regular "
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -175,7 +175,7 @@
             android:textColor="@color/colorPrimary" app:layout_constraintTop_toBottomOf="@+id/textView42"
             android:textSize="11sp"
             android:layout_marginStart="8dp"/>
-    <androidx.appcompat.widget.AppCompatTextView
+    <com.google.android.material.textview.MaterialTextView
             android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -185,7 +185,7 @@
             android:layout_marginEnd="8dp"
             style="@style/Body1Bold" app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintEnd_toStartOf="@+id/guideline4"/>
-    <androidx.appcompat.widget.AppCompatTextView
+    <com.google.android.material.textview.MaterialTextView
             android:text="Body 1 Bold 17/24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -193,14 +193,14 @@
             android:layout_marginTop="8dp"
             android:textColor="@color/colorPrimary" app:layout_constraintTop_toBottomOf="@+id/textView42"
             android:textSize="11sp" android:layout_marginStart="8dp"/>
-    <androidx.appcompat.widget.AppCompatTextView
+    <com.google.android.material.textview.MaterialTextView
             android:text="Head 4 Bold 20 / 24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView43" app:layout_constraintStart_toStartOf="@+id/guideline3"
             android:layout_marginStart="8dp" android:layout_marginTop="4dp"
             android:textColor="@color/colorPrimary" app:layout_constraintTop_toBottomOf="@+id/textView40"/>
-    <androidx.appcompat.widget.AppCompatTextView
+    <com.google.android.material.textview.MaterialTextView
             android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -209,14 +209,14 @@
             app:layout_constraintTop_toBottomOf="@+id/textView43"
             style="@style/Head4Light"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="8dp"/>
-    <androidx.appcompat.widget.AppCompatTextView
+    <com.google.android.material.textview.MaterialTextView
             android:text="Head 4 Bold 20 / 24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView41" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp" android:layout_marginTop="8dp"
             android:textColor="@color/colorPrimary" app:layout_constraintTop_toBottomOf="@+id/textView40"/>
-    <androidx.appcompat.widget.AppCompatTextView
+    <com.google.android.material.textview.MaterialTextView
             android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -226,14 +226,14 @@
             android:layout_marginEnd="8dp"
             style="@style/Head4Bold" app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"/>
-    <androidx.appcompat.widget.AppCompatTextView
+    <com.google.android.material.textview.MaterialTextView
             android:text="Head 3 Bold 22 / 28"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView39" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp" android:layout_marginTop="8dp"
             android:textColor="@color/colorPrimary" app:layout_constraintTop_toBottomOf="@+id/textView12"/>
-    <androidx.appcompat.widget.AppCompatTextView
+    <com.google.android.material.textview.MaterialTextView
             android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -242,7 +242,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView39"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             style="@style/Head3Bold" app:layout_constraintHorizontal_bias="1.0"/>
-    <androidx.appcompat.widget.AppCompatTextView
+    <com.google.android.material.textview.MaterialTextView
             android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -252,21 +252,21 @@
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             style="@style/AppTheme" app:layout_constraintHorizontal_bias="0.0"
             android:textAppearance="@style/Head2Bold"/>
-    <androidx.appcompat.widget.AppCompatTextView
+    <com.google.android.material.textview.MaterialTextView
             android:text="Head 2 Bold 28 / 34"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView38" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp" android:layout_marginTop="8dp"
             android:textColor="@color/colorPrimary" app:layout_constraintTop_toBottomOf="@+id/textView11"/>
-    <androidx.appcompat.widget.AppCompatTextView
+    <com.google.android.material.textview.MaterialTextView
             android:text="Head 1 Bold 34 / 40"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView10" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp" android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
             android:textColor="@color/colorPrimary"/>
-    <androidx.appcompat.widget.AppCompatTextView
+    <com.google.android.material.textview.MaterialTextView
             android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             android:layout_width="0dp"
             android:layout_height="wrap_content"
