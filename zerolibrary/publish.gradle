@@ -1,6 +1,6 @@
 apply plugin: 'com.jfrog.bintray'
 
-group 'com.batura.zerolibrary'
+group 'com.batura'
 version '1.1.0'
 
 project.ext {
@@ -22,9 +22,10 @@ bintray {
     configurations = ['archives']
     override = true
     pkg {
-        repo = "Zero-Batura-Library"
-        name = 'android'
-        description = "Batura Zero Design Library"
+        repo = "Android"
+        name = 'Zero'
+        userOrg = "baturamobilesolutions"
+        description = "Design Library for Android"
         publicDownloadNumbers = true
         licenses = ['Apache-2.0']
         vcsUrl = 'https://github.com/BaturaMobile/ZeroBaturaLibrary'

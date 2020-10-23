@@ -23,13 +23,13 @@
             app:menu="@menu/bottom_nav_drawer_menu"
             app:theme="@style/NavigationDrawerStyle" />
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginTop="16dp"
-            android:text="@string/bottom_sheet_name"
+            tools:text="@string/bottom_sheet_name"
 
             android:textAppearance="@style/Head4Bold"
 
@@ -47,7 +47,7 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/close_imageview"
             android:layout_width="24dp"
             android:layout_height="24dp"
