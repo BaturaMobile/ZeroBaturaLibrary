@@ -119,6 +119,8 @@ class DesignSystemDialog(@LayoutRes val layoutDialog : Int, @StyleRes val dialog
     }
 
     private fun processSystemComponents(designSystemComponents: DesignSystemComponents){
+        fragmentName = designSystemComponents.dialogName
+
         designSystemComponents.title?.let {
             sd_title.visibility = View.VISIBLE
             sd_title.text = it
@@ -161,6 +163,5 @@ class DesignSystemDialog(@LayoutRes val layoutDialog : Int, @StyleRes val dialog
 
     companion object {
         const val DESIGN_SYSTEM_COMPONENTS_KEY  = "designComponentKey"
-
     }
 }
