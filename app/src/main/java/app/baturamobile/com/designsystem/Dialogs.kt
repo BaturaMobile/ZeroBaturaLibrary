@@ -14,7 +14,7 @@ class Dialogs : AppCompatActivity(), com.batura.zerolibrary.widgets.DesignSystem
         ad_dialog_alert.setOnClickListener {
             val fragment = com.batura.zerolibrary.widgets.DesignSystemDialog(
                 R.layout.standard_container_dialog,
-                R.style.DialogsThemeBase
+                R.style.ZeroDialogsThemeBase
             )
 
             val test = com.batura.zerolibrary.widgets.DesignSystemDialog.DesignSystemComponents(
@@ -32,7 +32,7 @@ class Dialogs : AppCompatActivity(), com.batura.zerolibrary.widgets.DesignSystem
         ad_dialog_head.setOnClickListener {
             val fragment = com.batura.zerolibrary.widgets.DesignSystemDialog(
                 R.layout.standard_container_dialog,
-                R.style.DialogsThemeBase
+                R.style.ZeroDialogsThemeBase
             )
 
             val test = com.batura.zerolibrary.widgets.DesignSystemDialog.DesignSystemComponents(

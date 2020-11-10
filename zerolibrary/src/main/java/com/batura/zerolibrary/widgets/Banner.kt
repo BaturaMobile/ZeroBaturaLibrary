@@ -30,6 +30,9 @@ class Banner : FrameLayout {
             contentTextView.text = value
         }
 
+    /**
+     * Set the leftButtonText
+     */
     var leftButtonText: String?
         get() = _leftButtonText
         set(value) {
@@ -37,6 +40,9 @@ class Banner : FrameLayout {
             leftButton.text = value
         }
 
+    /**
+     * Set the right button text
+     */
     var rightButtonText: String?
         get() = _rightButtonText
         set(value) {
@@ -44,6 +50,9 @@ class Banner : FrameLayout {
             rightButton.text = value
         }
 
+    /**
+     * Set the drawable banner icon
+     */
     var iconDrawableRes: Drawable?
         get() = _iconDrawableRes
         set(value) {
@@ -98,12 +107,27 @@ class Banner : FrameLayout {
 
     }
 
+    /**
+     * Dismiss and hide the banner
+     */
     fun dismiss() = this.collapse()
+
+    /**
+     * Show the banner
+     */
     fun show() = this.expand2()
 
+    /**
+     * @param action The lambda function with is called when the left button is clicked
+     */
     fun setLeftButtonAction(action: () -> Unit) = leftButton.setOnClickListener { action() }
+
+    /**
+     * @param action The lambda function with is called when the right button is clicked
+     */
     fun setRightButtonAction(action: () -> Unit) = rightButton.setOnClickListener { action() }
 
+    @Deprecated("This function is outdated", ReplaceWith("View2.expand"))
     private fun View.expand() {
         this@expand.measure(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT)
         val targetHeight = this@expand.measuredHeight

@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent (this,Toolbar::class.java))
         }
         setComponent(R.drawable.ic_icon_overview_form,"TextField").setOnClickListener {
-            startActivity(Intent (this,LettersActivity::class.java))
+            startActivity(Intent (this,FormsActivity::class.java))
         }
         setComponent(R.drawable.ic_icon_overview_snackbar,"SnackBar").setOnClickListener {
             startActivity(Intent(this,ToastActivity::class.java))

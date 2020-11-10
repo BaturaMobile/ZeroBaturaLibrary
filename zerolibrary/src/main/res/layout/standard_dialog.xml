@@ -9,7 +9,7 @@
         android:minWidth="280dp"
         tools:showIn="@layout/standard_container_dialog">
 
-    <androidx.appcompat.widget.AppCompatTextView
+    <com.google.android.material.textview.MaterialTextView
             android:id="@+id/sd_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -26,7 +26,7 @@
             app:layout_constraintTop_toBottomOf="@+id/sd_image"
             tools:visibility="visible" />
 
-    <androidx.appcompat.widget.AppCompatTextView
+    <com.google.android.material.textview.MaterialTextView
             android:id="@+id/sd_description"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -69,7 +69,7 @@
             android:layout_marginBottom="16dp"
             android:text="Button"
             android:textAppearance="@style/Body1Regular"
-            android:visibility="gone"
+            android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/sd_space"
@@ -83,7 +83,7 @@
             android:fontFamily="@font/book"
             android:text="Button"
             android:textAppearance="@style/Body1Light"
-            android:visibility="gone"
+            android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="@+id/sd_right_button"
             app:layout_constraintEnd_toStartOf="@+id/sd_right_button"
             tools:visibility="visible" />
