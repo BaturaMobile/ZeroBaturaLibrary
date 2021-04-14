@@ -5,7 +5,7 @@ plugins {
     id 'maven-publish'
     id "org.jetbrains.dokka"
 }
-apply from: 'publish.gradle'
+//apply from: 'publish.gradle'
 
 
 
@@ -20,7 +20,7 @@ afterEvaluate {
                 // You can then customize attributes of the publication as shown below.
                 groupId = 'com.batura.zerolibrary'
                 artifactId = 'final'
-                version = '1.1'
+                version = '1.1.1'
             }
             // Creates a Maven publication called “debug”.
             debug(MavenPublication) {
@@ -29,7 +29,8 @@ afterEvaluate {
 
                 groupId = 'com.batura.zerolibrary'
                 artifactId = 'final-debug'
-                version = '1.1'
+                version = '1.1.1'
+
             }
         }
     }
@@ -40,12 +41,11 @@ afterEvaluate {
 
 android {
     compileSdkVersion 30
-
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
-        versionName "1.1"
+        versionName "1.1.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"

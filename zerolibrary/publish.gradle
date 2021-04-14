@@ -1,7 +1,7 @@
 apply plugin: 'com.jfrog.bintray'
 
 group 'com.batura'
-version '1.1.0'
+version '1.1.1'
 
 project.ext {
     mavGitUrl = 'https://github.com/BaturaMobile/ZeroBaturaLibrary'

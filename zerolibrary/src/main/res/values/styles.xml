@@ -110,7 +110,7 @@
     </style>
 
     <style name="Head3Bold" parent="Head">
-        <item name="android:fontFamily">?attr/font_bold</item>
+        <item name="fontFamily">?attr/font_bold</item>
         <item name="android:textSize">22sp</item>
     </style>
     <style name="Head3Medium" parent="Head">
@@ -150,7 +150,7 @@
     </style>
 
     <style name="Body1Bold" parent="Body1">
-        <item name="android:fontFamily">?attr/font_bold</item>
+        <item name="fontFamily">?attr/font_bold</item>
     </style>
 
     <style name="Body1Regular" parent="Body1">
@@ -163,15 +163,15 @@
     </style>
 
     <style name="Body2Light" parent="Body2">
-        <item name="android:fontFamily">?attr/font_light</item>
+        <item name="fontFamily">?attr/font_light</item>
     </style>
 
     <style name="Body2Bold" parent="Body2">
-        <item name="android:fontFamily">?attr/font_bold</item>
+        <item name="fontFamily">?attr/font_bold</item>
     </style>
 
     <style name="Body2Regular" parent="Body2">
-        <item name="android:fontFamily">?attr/font_medium</item>
+        <item name="fontFamily">?attr/font_medium</item>
     </style>
 
     <style name="Caption1" parent="TextAppearance.AppCompat">
@@ -180,14 +180,14 @@
     </style>
 
     <style name="Caption1Regular" parent="Caption1">
-        <item name="android:fontFamily">?attr/font_medium</item>
+        <item name="fontFamily">?attr/font_medium</item>
     </style>
 
     <style name="Caption1Bold" parent="Caption1">
-        <item name="android:fontFamily">?attr/font_bold</item>
+        <item name="fontFamily">?attr/font_bold</item>
     </style>
     <style name="Caption1Light" parent="Caption1">
-        <item name="android:fontFamily">?attr/font_light</item>
+        <item name="fontFamily">?attr/font_light</item>
     </style>
 
     <style name="Caption2" parent="TextAppearance.AppCompat">
@@ -196,15 +196,15 @@
     </style>
 
     <style name="Caption2Regular" parent="Caption2">
-        <item name="android:fontFamily">?attr/font_medium</item>
+        <item name="fontFamily">?attr/font_medium</item>
     </style>
 
     <style name="Caption2Bold" parent="Caption2">
-        <item name="android:fontFamily">?attr/font_bold</item>
+        <item name="fontFamily">?attr/font_bold</item>
     </style>
 
     <style name="Caption2Light" parent="Caption2">
-        <item name="android:fontFamily">?attr/font_bold</item>
+        <item name="fontFamily">?attr/font_bold</item>
     </style>
 
     <!-- Toolbar -->

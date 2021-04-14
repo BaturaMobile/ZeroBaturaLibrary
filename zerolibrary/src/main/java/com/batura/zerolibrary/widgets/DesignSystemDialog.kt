@@ -38,6 +38,7 @@ class DesignSystemDialog(@LayoutRes val layoutDialog : Int, @StyleRes val dialog
     override fun onDestroyView() {
         super.onDestroyView()
         if(dismissOnClickButton.not()){
+            dismiss?.invoke(fragmentName)
             listener?.onDismiss(fragmentName)
         }
     }
@@ -73,6 +74,9 @@ class DesignSystemDialog(@LayoutRes val layoutDialog : Int, @StyleRes val dialog
             dismissOnClickButton = true
 
             dismiss()
+
+            leftClick?.invoke(fragmentName)
+
             listener?.onLeftButtonClick(fragmentName) }
 
         sd_right_button.setOnClickListener {
@@ -80,6 +84,8 @@ class DesignSystemDialog(@LayoutRes val layoutDialog : Int, @StyleRes val dialog
             dismissOnClickButton = true
 
             dismiss()
+            rightClick?.invoke(fragmentName)
+
             listener?.onRightButtonClick(fragmentName) }
 
 
@@ -100,6 +106,14 @@ class DesignSystemDialog(@LayoutRes val layoutDialog : Int, @StyleRes val dialog
         }
     }
 
+    var rightClick : ((String) -> Unit)? = null
+
+    var leftClick : ((String) -> Unit)? = null
+
+    var dismiss : ((String) -> Unit)? = null
+
+
+
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         val dialog = Dialog(requireContext(), dialogTheme)
 
@@ -114,7 +128,8 @@ class DesignSystemDialog(@LayoutRes val layoutDialog : Int, @StyleRes val dialog
 
         try {
             // Instantiate the NoticeDialogListener so we can send events to the host
-            listener = context as DesignSystemDialogListener
+            if (listener == null)  listener = context as DesignSystemDialogListener
+
         } catch (ignore: ClassCastException) { }
     }
 

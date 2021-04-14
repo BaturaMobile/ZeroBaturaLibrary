@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
         }
         setComponent(R.drawable.ic_icon_overview_banner,"Banner").setOnClickListener {
             //banner.iconDrawableRes = null
-            banner.show()
+           //banner.show()
         }
         setComponent(R.drawable.ic_icon_overview_dialog,"Dialog").setOnClickListener {
             startActivity(Intent(this,Dialogs::class.java))
@@ -127,9 +127,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this,EmptyStateActivity::class.java))
         }*/
 
-        banner.setRightButtonAction {
+        /*banner.setRightButtonAction {
             banner.dismiss()
-        }
+        }*/
 
     }
 

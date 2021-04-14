@@ -32,7 +32,7 @@ abstract class BaseActivityV4 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
     }
 
-    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return if (item != null && item.itemId == android.R.id.home) {
             checkFinishMethod()
             true

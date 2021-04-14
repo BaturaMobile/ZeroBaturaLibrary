@@ -77,6 +77,10 @@ class Dialogs : AppCompatActivity(), com.batura.zerolibrary.widgets.DesignSystem
                 false
             )
 
+            fragment.leftClick = {
+
+            }
+
 
 
             val test = com.batura.zerolibrary.widgets.DesignSystemDialog.DesignSystemComponents(

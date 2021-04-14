@@ -41,7 +41,7 @@ fun Activity.collapsePanels(){
 }
 
 fun Activity.hideKeyboard() {
-    hideKeyboard(if (currentFocus == null) View(this) else currentFocus)
+    if (currentFocus == null) View(this) else currentFocus?.let { hideKeyboard(it) }
 }
 
 

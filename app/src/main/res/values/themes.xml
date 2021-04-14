@@ -2,7 +2,7 @@
 <resources>
     <style name="AppTheme" parent="ZeroAppTheme">
 
-       <!-- <item name="colorPrimary">@color/colorPrimary</item>
+       <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorOnPrimary">@color/colorOnPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
 
@@ -12,10 +12,10 @@
         <item name="colorSurface">@color/colorSurface</item>
         <item name="colorOnSurface">@color/colorOnSurface</item>
 
-        <item name="iconTint">@android:color/white</item> -->
+        <item name="iconTint">@android:color/white</item>
 
 
-        <item name="font_medium">@font/arima_madurai_medium</item>
+       <item name="font_medium">@font/arima_madurai_medium</item>
         <item name="font_bold">@font/arima_madurai_bold</item>
         <item name="font_light">@font/arima_madurai_light</item>
 
