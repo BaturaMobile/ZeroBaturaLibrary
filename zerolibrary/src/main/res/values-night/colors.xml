@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f79cc5</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#98617A</color>
+
+    <color name="colorSecondary">#75CF97</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
+
+    <color name="colorSurface">#1C1C1E</color>
+    <color name="colorOnSurface">#FFFFFF</color>
+
+    <color name="colorBackground">#000000</color>
+    <color name="colorOnBackground">#FFFFFF</color>
+
+    <color name="success">#50822C</color>
+    <color name="onSuccess">#FFFFFF</color>
+
+    <color name="alert">#B06400</color>
+    <color name="onAlert">#FFFFFF</color>
+
+    <color name="error">#d73946</color>
+    <color name="onError">#FFFFFF</color>
+
+
+</resources>

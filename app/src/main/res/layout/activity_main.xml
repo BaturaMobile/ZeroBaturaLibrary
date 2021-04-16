@@ -13,6 +13,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginTop="16dp"
+            android:tint="@color/colorOnBackground"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/banner"
             app:srcCompat="@drawable/ic_logo_zero" />
@@ -38,7 +39,7 @@
 
     </androidx.core.widget.NestedScrollView>
 
-  <!--  <com.batura.zerolibrary.widgets.Banner
+    <com.batura.zerolibrary.widgets.Banner
             android:id="@+id/banner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -50,7 +51,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:leftButtonText="Continue as Guest"
-            app:rightButtonText="Sign in" />-->
+            app:rightButtonText="Sign in" />
 
     <TextView
             android:id="@+id/textView68"

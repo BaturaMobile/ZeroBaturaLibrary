@@ -80,7 +80,6 @@
             style="@style/textMaterialButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/book"
             android:text="Button"
             android:textAppearance="@style/Body1Light"
             android:visibility="invisible"

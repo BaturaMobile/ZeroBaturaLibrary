@@ -46,8 +46,8 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this,ToastActivity::class.java))
         }
         setComponent(R.drawable.ic_icon_overview_banner,"Banner").setOnClickListener {
-            //banner.iconDrawableRes = null
-           //banner.show()
+            banner.iconDrawableRes = null
+           banner.show()
         }
         setComponent(R.drawable.ic_icon_overview_dialog,"Dialog").setOnClickListener {
             startActivity(Intent(this,Dialogs::class.java))
@@ -127,15 +127,16 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this,EmptyStateActivity::class.java))
         }*/
 
-        /*banner.setRightButtonAction {
+        banner.setRightButtonAction {
             banner.dismiss()
-        }*/
+        }
 
     }
 
     fun setComponent(@DrawableRes iconRes : Int, text : String) : View {
         val view = View.inflate(this,R.layout.main_component_layout,null)
         view.mcl_image.setImageResource(iconRes)
+
         view.mcl_text.text = text
         container.addView(view)
 

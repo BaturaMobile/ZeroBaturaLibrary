@@ -2,10 +2,6 @@ image: androidsdk/android-30
 
 clone:
   depth: full
-
-
-
-
 pipelines:
   branches:
     master:

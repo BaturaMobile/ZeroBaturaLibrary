@@ -15,13 +15,13 @@
                                                      app:layout_constraintStart_toStartOf="parent"
                                                      app:layout_constraintEnd_toEndOf="parent"
                                                      app:layout_constraintTop_toTopOf="parent"
-                                                    style="@style/Widget.MaterialComponents.AppBarLayout.Primary"
+                                                     style="@style/Widget.MaterialComponents.AppBarLayout.Primary"
                                                      android:id="@+id/appBarLayout2">
 
         <com.google.android.material.appbar.MaterialToolbar
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                style="@style/Widget.MaterialComponents.Toolbar.PrimarySurface"
+                style="@style/Widget.MaterialComponents.Toolbar.Primary"
                 app:titleTextAppearance="@style/ToolbarTitle"
                 app:subtitleTextAppearance="@style/ToolbarSubtitle"
                 android:minHeight="?attr/actionBarSize"
@@ -48,7 +48,7 @@
 
         <com.google.android.material.appbar.MaterialToolbar
                 android:id="@+id/toolbar2"
-                style="@style/Widget.MaterialComponents.Toolbar.PrimarySurface"
+                style="@style/Widget.MaterialComponents.Toolbar.Primary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:minHeight="?attr/actionBarSize"
@@ -106,7 +106,7 @@
 
         <com.google.android.material.appbar.MaterialToolbar
                 android:id="@+id/toolbar3"
-                style="@style/Widget.MaterialComponents.Toolbar.Surface"
+    
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:minHeight="?attr/actionBarSize"
@@ -139,7 +139,6 @@
 
         <com.google.android.material.appbar.MaterialToolbar
                 android:id="@+id/toolbar4"
-                style="@style/Widget.MaterialComponents.Toolbar.Surface"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:minHeight="?attr/actionBarSize"
